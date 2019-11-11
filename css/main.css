@@ -1,0 +1,162 @@
+/*******************************************************************************
+ *
+ * Author:      Andy G. Dodson
+ * File:        Main.css
+ * Description: Main css file for ZombieRun Website
+ *
+ * Using standards for iphone5, and ipad devices         
+ * Desktop / Lapop screen width :   1024 min
+ * Ipad :   Horizontal :            1024 (same as desktop)
+ *          Vertical :              768   
+ * Iphone 5 : Horizontal :          320
+ *
+ *      A better target group would probably use a more recent phone maybe iphone6+ upwards        
+ *
+ *******************************************************************************/
+ 
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap'); /* Same Font Styler as used in the game ZombieRun*/
+body {
+    font-family: 'Bangers', cursive;
+    text-align: justify;
+    font-size: 1.2em;
+    color: #500D0D;     /* Text color as used in ZombieRun Game, hex value  
+    Make it hard to see against drak background needs textbackground color or border*/
+    background-color: #252526; /* dark grey in hex , alternative is 1e1e1e or 4b4b4f although 4b4b4f seems too light */
+    margin: 10px; 
+}
+
+/** for now using hard defined px diamension
+/** not very response but will adjsut to em or % once content is added and a 
+/** better feel is produced
+/** grid tracks layout **/
+/** desktop/laptop layout **/
+#layout {
+    display: grid; 
+    grid-template-rows: [header-start] 100px [main-content] 400px [secondary-content] 200px [footer-start] 100px;
+    grid-template-columns: [ads] 200px [main] 1fr [links] 200px;
+    grid-template-areas:
+                         "header    header      login"
+                         "main      main        main"
+                         "ads       extra       links"
+                         "footer    footer      footer"   ; 
+} 
+
+
+/* color formatting div sections to help with visulaistion block layout */
+
+#two { background-color: darkmagenta;}
+#three {background-color: darkturquoise;}
+#four {background-color: deeppink;}
+#five {background-color: gold;}
+#six {background-color: green;}
+#seven {background-color: darkslateblue;}
+/** current flex container is too "high" needs adjusting to more fit hieght of navbar **/
+#one {grid-area:header}
+#three {grid-area : main}
+#four {grid-area: ads}
+#five { grid-area: extra}
+#six { grid-area:links}
+#seven {grid-area: footer}
+
+/* Nav bar formatting */
+ul {
+    display: flex;
+    margin: 0 ;
+    padding: 5em;
+    align-items : center;
+    background: #4b4b4f;
+    list-style: none;   /* remove bullet points form list */   
+}
+
+li{
+    margin: 0 1em;
+}
+
+li a {
+    display: block;
+    border : 1 px solid;
+    border-radius : .5em;
+    padding : .5em 1em;
+    margin : .5em;
+}
+/* Set spacing on logo to auto thus pushes menu items to right of nav bar, sitting logo on left */
+
+li.logo {
+    margin-right: auto;
+}
+/* end of navbar formatting */
+
+/***************        !NOTE *********************************/
+/** colors need formatting to represent and contrast better!! */
+/* on focus  background color and style is good */
+p {
+    margin: 15px;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+a:focus {
+    color: blue;
+    background-color: darkgrey;
+}
+a:hover {
+    color: blue;
+    background-color: darkgray;
+}
+a:active {
+    background-color: red;
+}
+a:visited {
+    color: maroon;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-family: 'Dancing Script', cursive;
+    color: green;
+    text-align: left;
+}
+blockquote {
+    text-align: left;
+    border: 2px solid blue;
+    font-size: 1.5em;
+    margin: 10px;
+}
+/*blockquote p {
+    margin: 2px;
+    border: 2px solid blue;
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-weight: bold;
+    font-size: 2em;
+}
+blockquote p::first-letter {
+    font-family: 'Satisfy', cursive;
+    letter-spacing: 10px;
+    font-size: 200%;
+    color: red;
+    background-image: url(/img/old-antique.jpg);
+}*/
+blockquote em {
+    font-size: 1em;
+}
+
+
+em {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+}
+
+/** 404 page formatting ***/
+notfound p{
+    text-align: center;
+}
+/********************************************************* 
+ * some custom formatting for the future  
+ * is to go in here at some point  
+ * for now just a little reminder to do somethign about it
+ **********************************************************/
