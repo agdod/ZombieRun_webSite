@@ -1,4 +1,5 @@
-<div id="navbar"><ul> <!-- code for nav bar works nicely here-->
+<div id="navbar">
+    <ul> <!-- code for nav bar works nicely here-->
             <li class="logo"><img src="/img/logo_ZombieRun.png" alt="ZombieRunLogo"></li>
             <li> <a href="index.html">Home</a> </li>
             <li> <a href="about.html">About</a> </li>
@@ -8,4 +9,5 @@
                                                                     PHP script used to detect if signed in if true this link is displayed -->
 
             <li> <a href="userProfile.html"> Profile </a> </li> 
-        </ul> </div>
+    </ul> 
+</div>
