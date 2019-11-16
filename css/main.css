@@ -57,8 +57,15 @@ body {
 #five { grid-area: extra}
 #six { grid-area:links}
 #seven {grid-area: footer}
-
-/* Nav bar formatting */
+/* ********** Nav Bar ************** */
+.navbar {
+    overflow: hidden;
+    background-color: #4b4b4f; 
+    position: fixed;    /* set navbar to fixed postion */
+    top: 0; /* set position to top */
+    width: 100% ; /* Full width*/
+}
+/* Nav bar formatting with flexigrid*/
 ul {
     display: flex;
     margin: 0 ;
@@ -84,7 +91,13 @@ li a {
 li.logo {
     margin-right: auto;
 }
+
 /* end of navbar formatting */
+
+/* main content */
+.main {
+    margin-top: 30px; /* add top margin to prevent content overlay */
+}
 
 /***************        !NOTE *********************************/
 /** colors need formatting to represent and contrast better!! */
