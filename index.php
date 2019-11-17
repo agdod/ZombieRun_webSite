@@ -18,11 +18,6 @@
                    <div id="footer">FOOTER</div>
         </div>
         
-        <blockquote>
-                <p>"Run the gaulet of zombies, escape, survive, <B>RUN!</B>"</p>
-        </blockquote>
-        
-            
-      <!-- footer same as nav bar-->  
+       <!--?php include('footer.php') ?> footer same as nav bar-->  
     </body>
 </html>
