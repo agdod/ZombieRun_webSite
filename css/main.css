@@ -18,11 +18,11 @@
 body {
     font-family: 'Bangers', cursive;
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1em;
     color: #500D0D;     /* Text color as used in ZombieRun Game, hex value  
     Make it hard to see against drak background needs textbackground color or border*/
     background-color: #252526; /* dark grey in hex , alternative is 1e1e1e or 4b4b4f although 4b4b4f seems too light */
-    margin: 10px; 
+    margin: .5em; 
 }
 
 /** for now using hard defined px diamension
@@ -31,11 +31,14 @@ body {
 /** grid tracks layout **/
 /** desktop/laptop layout **/
 #layout {
+    margin-top: 5.5em;
+    
+   
     display: grid; 
-    grid-template-rows: [header-start] 100px [main-content] 400px [secondary-content] 200px [footer-start] 100px;
-    grid-template-columns: [ads] 200px [main] 1fr [links] 200px;
+    grid-template-rows: [header-start] 3em [main-content] 400px [secondary-content] 200px [footer-start] 100px;
+    grid-template-columns: [ads] 25% [main] 1fr [links] 25%;
     grid-template-areas:
-                         "header    header      login"
+                         "header    header      header"
                          "main      main        main"
                          "ads       extra       links"
                          "footer    footer      footer"   ; 
@@ -58,9 +61,10 @@ body {
 #six { grid-area:links}
 #seven {grid-area: footer}
 /* ********** Nav Bar ************** */
-.navbar {
+#navbar {
     overflow: hidden;
     background-color: #4b4b4f; 
+    height: 5em ;
     position: fixed;    /* set navbar to fixed postion */
     top: 0; /* set position to top */
     width: 100% ; /* Full width*/
@@ -69,7 +73,7 @@ body {
 ul {
     display: flex;
     margin: 0 ;
-    padding: 5em;
+    padding: 0.5em;
     align-items : center;
     background: #4b4b4f;
     list-style: none;   /* remove bullet points form list */   

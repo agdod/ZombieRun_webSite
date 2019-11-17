@@ -1,5 +1,5 @@
 <div id="navbar">
-    <ul> <!-- code for nav bar works nicely here-->
+    <ul> 
             <li class="logo"><img src="/img/logo_ZombieRun.png" alt="ZombieRunLogo"></li>
             <li> <a href="index.html">Home</a> </li>
             <li> <a href="about.html">About</a> </li>
