@@ -47,19 +47,19 @@ body {
 
 /* color formatting div sections to help with visulaistion block layout */
 
-#two { background-color: darkmagenta;}
-#three {background-color: darkturquoise;}
-#four {background-color: deeppink;}
-#five {background-color: gold;}
-#six {background-color: green;}
-#seven {background-color: darkslateblue;}
+
+#main {background-color: darkturquoise;}
+#subSectionAds {background-color: deeppink;}
+#subSectionExtra {background-color: gold;}
+#subSectionLinks {background-color: green;}
+#footer {background-color: darkslateblue;}
 /** current flex container is too "high" needs adjusting to more fit hieght of navbar **/
-#one {grid-area:header}
-#three {grid-area : main}
-#four {grid-area: ads}
-#five { grid-area: extra}
-#six { grid-area:links}
-#seven {grid-area: footer}
+#header {grid-area:header}
+#main {grid-area : main}
+#subSectionAds {grid-area: ads}
+#subSectionExtra { grid-area: extra}
+#subSectionLinks { grid-area:links}
+#footer {grid-area: footer}
 /* ********** Nav Bar ************** */
 #navbar {
     overflow: hidden;
