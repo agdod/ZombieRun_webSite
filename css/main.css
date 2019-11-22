@@ -13,6 +13,16 @@
  *      A better target group would probably use a more recent phone maybe iphone6+ upwards        
  *
  *******************************************************************************/
+
+ /*************************************
+ * using bootstrap breaklimits 
+ * xs   : <576px
+ * s    : >=576px
+ * m    : >=768px
+ * l    : >=992px
+ * XL   : >=1200px
+ ***************************************/
+
  
 @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap'); /* Same Font Styler as used in the game ZombieRun*/
 body {
@@ -24,42 +34,76 @@ body {
     background-color: #252526; /* dark grey in hex , alternative is 1e1e1e or 4b4b4f although 4b4b4f seems too light */
     margin: .5em; 
 }
-
-/** for now using hard defined px diamension
-/** not very response but will adjsut to em or % once content is added and a 
-/** better feel is produced
 /** grid tracks layout **/
 /** desktop/laptop layout **/
-#layout {
-    margin-top: 5.5em;
+/** responsive grid using media queries **/
+@media min-width: 992px /** full width **/
+{
+
+    #layout {
+        margin-top: 5.5em;
+        display: grid; 
+        grid-template-rows: [header-start] 3em [main-content] 400px [secondary-content] 200px [footer-start] 100px;
+        grid-template-columns: [ads] 25% [main] 1fr [links] 25%;
+        grid-template-areas:
+                             "header    header      header"
+                             "main      main        main"
+                             "ads       extra       links"
+                             "footer    footer      footer"   ; 
+    } 
     
-   
-    display: grid; 
-    grid-template-rows: [header-start] 3em [main-content] 400px [secondary-content] 200px [footer-start] 100px;
-    grid-template-columns: [ads] 25% [main] 1fr [links] 25%;
-    grid-template-areas:
-                         "header    header      header"
-                         "main      main        main"
-                         "ads       extra       links"
-                         "footer    footer      footer"   ; 
-} 
+    /* color formatting div sections to help with visulaistion block layout */
+    
+    #main {background-color: darkturquoise;}
+    #subSectionAds {background-color: deeppink;}
+    #subSectionExtra {background-color: gold;}
+    #subSectionLinks {background-color: green;}
+    #footer {background-color: darkslateblue;}
+    /** current flex container is too "high" needs adjusting to more fit hieght of navbar **/
+    #header {grid-area:header}
+    #main {grid-area : main}
+    #subSectionAds {grid-area: ads}
+    #subSectionExtra { grid-area: extra}
+    #subSectionLinks { grid-area:links}
+    #footer {grid-area: footer}
+}
 
+@media min-wdith: 768px 
+{
+    #layout {
+        margin-top: 5.5em;
+        display: grid; 
+        grid-template-rows: [header-start] 3em [main-content] [ads]  5em [secondary-content]  [sub-content] [ads] 5em [footer-start] 2em;
+        grid-template-columns: [main] 1fr ;
+        grid-template-areas:
+                             "header"
+                             "main"
+                             "ads"
+                             "extra"
+                             "links"
+                             "ads"
+                             "footer"   ; 
+    } 
+    
+    /* color formatting div sections to help with visulaistion block layout */
+    
+    #main {background-color: darkturquoise;}
+    #subSectionAds {background-color: deeppink;}
+    #subSectionExtra {background-color: gold;}
+    #subSectionLinks {background-color: green;}
+    #footer {background-color: darkslateblue;}
+    /** current flex container is too "high" needs adjusting to more fit hieght of navbar **/
+    #header {grid-area:header}
+    #main {grid-area : main}
+    #subSectionAds {grid-area: ads}
+    #subSectionExtra { grid-area: extra}
+    #subSectionLinks { grid-area:links}
+    #footer {grid-area: footer}
 
-/* color formatting div sections to help with visulaistion block layout */
+}
 
+@media max-width:
 
-#main {background-color: darkturquoise;}
-#subSectionAds {background-color: deeppink;}
-#subSectionExtra {background-color: gold;}
-#subSectionLinks {background-color: green;}
-#footer {background-color: darkslateblue;}
-/** current flex container is too "high" needs adjusting to more fit hieght of navbar **/
-#header {grid-area:header}
-#main {grid-area : main}
-#subSectionAds {grid-area: ads}
-#subSectionExtra { grid-area: extra}
-#subSectionLinks { grid-area:links}
-#footer {grid-area: footer}
 /* ********** Nav Bar ************** */
 #navbar {
     overflow: hidden;
