@@ -188,3 +188,18 @@ notfound p{
  * is to go in here at some point  
  * for now just a little reminder to do somethign about it
  **********************************************************/
+
+
+/**** Footer ***/
+#footer {
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    background-color: #4b4b4f; 
+    height: 1.5em ;
+    position: fixed;    /* set navbar to fixed postion */
+    bottom: 0; /* set position to top */
+    width: 100% ; /* Full width*/
+    justify-content: center;
+    align-items: center;
+}
