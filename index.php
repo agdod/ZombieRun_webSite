@@ -47,9 +47,7 @@
                         </div>
                     </div>
                     <div id="SubSectionLinks">
-                        <p>
-                        <!-- ?php include('common_links.php') --> 
-                        <p> 
+                        <?php include('common_links.php') ?>
                         <!-- extra links can be added here for indivdual pages -->                                                
                     </div>
                     <div id="footer">
