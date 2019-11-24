@@ -18,14 +18,14 @@
             </div> 
             <div id="main">
                 <div class="content"> 
-                    <div class="text_content">
+                    <div class="content-50">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus felis orci, euismod et dapibus sed, vestibulum sed nibh. 
                     Sed consectetur odio nulla. Nam at magna imperdiet, viverra neque sit amet, ultrices libero. Praesent consequat hendrerit tellus sed scelerisque. 
                     Nunc gravida tellus a lacus maximus tristique gravida at nunc. In hac habitasse platea dictumst. Praesent blandit dolor ac accumsan consectetur. 
                     Praesent blandit elit vulputate lacus laoreet ultricies. Fusce scelerisque nunc vitae quam scelerisque, sed aliquam lectus condimentum. 
                     Donec dignissim sed tellus at volutpat. Praesent viverra fermentum ligula a commodo. Praesent imperdiet in odio in pellentesque. 
                     </div>
-                    <div class="img_content">
+                    <div class="content-50">
                         <img src="/img/apocalipse.png" alt="Post world apocalipse">
                     </div>   
                 </div>
@@ -40,14 +40,14 @@
             </div>
             <div id="subSectionExtra">
                 <div class="content">
-                    <div class="text_content">
+                    <div class="content-50">
                         Zombie run is a third person view set ina  post apolicatic world. <br>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                     </div>
-                    <div class="img_content">
+                    <div class="content-50">
                         <img src="/img/mainCharacter.png" alt text=" main character">
                     </div>
                 </div>
