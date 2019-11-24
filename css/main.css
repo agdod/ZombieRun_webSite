@@ -23,8 +23,14 @@
  * XL   : >=1200px
  ***************************************/
 
+/** All HTML, box sizing set to border-box applies padding + border are included in total width and height **/
+
+
  
 @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap'); /* Same Font Styler as used in the game ZombieRun*/
+*{
+    box-sizing : border-box;
+}
 body {
     font-family: 'Bangers', cursive;
     text-align: justify;
@@ -33,6 +39,11 @@ body {
     Make it hard to see against drak background needs textbackground color or border*/
     background-color: #252526; /* dark grey in hex , alternative is 1e1e1e or 4b4b4f although 4b4b4f seems too light */
     margin: .5em; 
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 /** common settings **/
@@ -50,6 +61,7 @@ body {
 #subSectionLinks { grid-area:links}
 #footer {grid-area: footer}
 
+
 /** grid tracks layout **/
 /** desktop/laptop layout **/
 /** responsive grid using media queries **/
@@ -58,7 +70,7 @@ body {
     #layout {
         margin-top: 5.5em;
         display: grid; 
-        grid-template-rows: [header-start] 3em [main-content] 400px [secondary-content] 200px [footer-start] 1.5em;
+        grid-template-rows: [header-start] 3em [main-content] auto [secondary-content] auto [footer-start] 1.5em;
         grid-template-columns: [ads] 25% [main] 1fr [links] 25%;
         grid-template-areas:
                                 "header    header      header"
@@ -129,6 +141,12 @@ li.logo {
     margin-top: 30px; /* add top margin to prevent content overlay */
 }
 
+}
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
 /***************        !NOTE *********************************/
 /** colors need formatting to represent and contrast better!! */
 /* on focus  background color and style is good */
@@ -172,7 +190,6 @@ blockquote em {
     font-size: 1em;
 }
 
-
 em {
     font-size: 1.2em;
     font-weight: bold;
@@ -183,14 +200,17 @@ em {
 notfound p{
     text-align: center;
 }
-/********************************************************* 
- * some custom formatting for the future  
- * is to go in here at some point  
- * for now just a little reminder to do somethign about it
- **********************************************************/
 
+ .content {
+    display: flex;
+    flex-flow: row wrap;
+}
+.content-50 { /** label for 50-50% split in content **/
+    width: 50%;
+    padding: 5px;
+}
 
-/**** Footer ***/
+/**** Footer ***/ /** footer goes last there should be nothing to override the footer format as it last in document **/
 #footer {
     display: flex;
     flex-flow: row wrap;
