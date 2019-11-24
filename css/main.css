@@ -34,75 +34,60 @@ body {
     background-color: #252526; /* dark grey in hex , alternative is 1e1e1e or 4b4b4f although 4b4b4f seems too light */
     margin: .5em; 
 }
+
+/** common settings **/
+ /* color formatting div sections to help with visulaistion block layout */
+#main {background-color: darkturquoise;}
+#subSectionAds {background-color: deeppink;}
+#subSectionExtra {background-color: gold;}
+#subSectionLinks {background-color: green;}
+#footer {background-color: darkslateblue;}
+/** current flex container is too "high" needs adjusting to more fit hieght of navbar **/
+#header {grid-area:header}
+#main {grid-area : main}
+#subSectionAds {grid-area: ads}
+#subSectionExtra { grid-area: extra}
+#subSectionLinks { grid-area:links}
+#footer {grid-area: footer}
+
 /** grid tracks layout **/
 /** desktop/laptop layout **/
 /** responsive grid using media queries **/
-@media min-width: 992px /** full width **/
+@media screen and (min-width: 863px) /** full width **/
 {
-
     #layout {
         margin-top: 5.5em;
         display: grid; 
-        grid-template-rows: [header-start] 3em [main-content] 400px [secondary-content] 200px [footer-start] 100px;
+        grid-template-rows: [header-start] 3em [main-content] 400px [secondary-content] 200px [footer-start] 1.5em;
         grid-template-columns: [ads] 25% [main] 1fr [links] 25%;
         grid-template-areas:
-                             "header    header      header"
-                             "main      main        main"
-                             "ads       extra       links"
-                             "footer    footer      footer"   ; 
-    } 
-    
-    /* color formatting div sections to help with visulaistion block layout */
-    
-    #main {background-color: darkturquoise;}
-    #subSectionAds {background-color: deeppink;}
-    #subSectionExtra {background-color: gold;}
-    #subSectionLinks {background-color: green;}
-    #footer {background-color: darkslateblue;}
-    /** current flex container is too "high" needs adjusting to more fit hieght of navbar **/
-    #header {grid-area:header}
-    #main {grid-area : main}
-    #subSectionAds {grid-area: ads}
-    #subSectionExtra { grid-area: extra}
-    #subSectionLinks { grid-area:links}
-    #footer {grid-area: footer}
+                                "header    header      header"
+                                "main      main        main"
+                                "ads       extra       links"
+                                "footer    footer      footer"   ; 
+    }   
 }
 
-@media min-wdith: 768px 
+@media screen and (max-wdith: 862px)
 {
+    body {
+        background-color: blue;
+    }
     #layout {
         margin-top: 5.5em;
         display: grid; 
-        grid-template-rows: [header-start] 3em [main-content] [ads]  5em [secondary-content]  [sub-content] [ads] 5em [footer-start] 2em;
-        grid-template-columns: [main] 1fr ;
+        grid-auto-columns: auto;
+        grid-auto-rows: auto;
         grid-template-areas:
                              "header"
                              "main"
-                             "ads"
+                             "ads links"
                              "extra"
                              "links"
-                             "ads"
                              "footer"   ; 
     } 
-    
-    /* color formatting div sections to help with visulaistion block layout */
-    
-    #main {background-color: darkturquoise;}
-    #subSectionAds {background-color: deeppink;}
-    #subSectionExtra {background-color: gold;}
-    #subSectionLinks {background-color: green;}
-    #footer {background-color: darkslateblue;}
-    /** current flex container is too "high" needs adjusting to more fit hieght of navbar **/
-    #header {grid-area:header}
-    #main {grid-area : main}
-    #subSectionAds {grid-area: ads}
-    #subSectionExtra { grid-area: extra}
-    #subSectionLinks { grid-area:links}
-    #footer {grid-area: footer}
-
 }
 
-@media max-width:
 
 /* ********** Nav Bar ************** */
 #navbar {
@@ -113,20 +98,19 @@ body {
     top: 0; /* set position to top */
     width: 100% ; /* Full width*/
 }
-/* Nav bar formatting with flexigrid*/
+/* ****** Nav bar formatting with flexigrid ******* */
 ul {
     display: flex;
+    flex-direction: row;
     margin: 0 ;
     padding: 0.5em;
     align-items : center;
     background: #4b4b4f;
     list-style: none;   /* remove bullet points form list */   
 }
-
 li{
     margin: 0 1em;
 }
-
 li a {
     display: block;
     border : 1 px solid;
@@ -135,11 +119,9 @@ li a {
     margin : .5em;
 }
 /* Set spacing on logo to auto thus pushes menu items to right of nav bar, sitting logo on left */
-
 li.logo {
     margin-right: auto;
 }
-
 /* end of navbar formatting */
 
 /* main content */
@@ -185,22 +167,7 @@ blockquote {
     font-size: 1.5em;
     margin: 10px;
 }
-/*blockquote p {
-    margin: 2px;
-    border: 2px solid blue;
-    background-color: whitesmoke;
-    text-align: center;
-    font-family: 'Herr Von Muellerhoff', cursive;
-    font-weight: bold;
-    font-size: 2em;
-}
-blockquote p::first-letter {
-    font-family: 'Satisfy', cursive;
-    letter-spacing: 10px;
-    font-size: 200%;
-    color: red;
-    background-image: url(/img/old-antique.jpg);
-}*/
+
 blockquote em {
     font-size: 1em;
 }
