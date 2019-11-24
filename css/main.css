@@ -196,10 +196,11 @@ notfound p{
     flex-flow: row wrap;
     overflow: hidden;
     background-color: #4b4b4f; 
-    height: 1.5em ;
+    height:1.5 em;
     position: fixed;    /* set navbar to fixed postion */
     bottom: 0; /* set position to top */
     width: 100% ; /* Full width*/
+    text-align:center;
     justify-content: center;
     align-items: center;
 }
