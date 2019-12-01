@@ -141,7 +141,6 @@ li.logo {
     margin-top: 30px; /* add top margin to prevent content overlay */
 }
 
-}
 #header {
     display: flex;
     justify-content: center;
@@ -203,11 +202,17 @@ notfound p{
 
  .content {
     display: flex;
-    flex-flow: row wrap;
+    /*flex-flow: row wrap;*/
 }
 .content-50 { /** label for 50-50% split in content **/
     width: 50%;
     padding: 5px;
+}
+.content-50-img{
+    width: 50%;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid #ccc;
 }
 
 /**** Footer ***/ /** footer goes last there should be nothing to override the footer format as it last in document **/
