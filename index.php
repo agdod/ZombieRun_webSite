@@ -25,7 +25,7 @@
                     Praesent blandit elit vulputate lacus laoreet ultricies. Fusce scelerisque nunc vitae quam scelerisque, sed aliquam lectus condimentum. 
                     Donec dignissim sed tellus at volutpat. Praesent viverra fermentum ligula a commodo. Praesent imperdiet in odio in pellentesque. 
                     </div>
-                    <div class="content-50">
+                    <div class="content-50-img">
                         <img src="/img/apocalipse.png" alt="Post world apocalipse">
                     </div>   
                 </div>
@@ -47,7 +47,7 @@
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                     </div>
-                    <div class="content-50">
+                    <div class="content-50-img">
                         <img src="/img/mainCharacter.png" alt text=" main character">
                     </div>
                 </div>
