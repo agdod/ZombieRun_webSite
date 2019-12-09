@@ -224,7 +224,11 @@ li.logo {
     justify-content: center;
     align-items: center;
 }
-
+.solid-divider {
+    border-style: none;
+    border-top-style: solid;
+    border-top-color: black;
+}
 /*@media (max-width: 600px){
     .grid-container {
         grid-template-areas: "header        header      header"
