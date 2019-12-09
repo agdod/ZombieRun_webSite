@@ -108,6 +108,7 @@ img {
     width: 100%;
     height: auto;
 }
+*/
 
 /* ********** Nav Bar ************** */
 .navbar {
@@ -146,6 +147,7 @@ li a {
 /* Set spacing on logo to auto thus pushes menu items to right of nav bar, sitting logo on left */
 li.logo {
     margin-right: auto;
+    align-items: center;
     padding: 0;
 }
 
@@ -229,6 +231,25 @@ li.logo {
     text-align:center;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 600px){
+    .grid-container {
+        grid-template-areas: "header        header      header"
+                            "main           main        main"
+                            "aside-left     aside-left  aside-left"
+                            "aside-right    aside-right aside-right"
+                            "footer         footer      footer";
+    }
+}
+
+@media (min-width: 768px){
+.grid-container{
+    grid-template-areas: "header        header      header"
+                        "main           main        aside-left"
+                        "aside-right    aside-right aside-right"
+                        "footer         footer      footer";
+    }
 }
 
 /***************        !NOTE *********************************/
