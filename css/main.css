@@ -32,8 +32,9 @@
 }
 
 /*  basic font applied to whole document , modified where need be for differnt font */
-html {
+body {
     font-family: "Lucida Sans", sans-serif;
+    background-color: #4b4b4f;
 }
 
 /** setting up esponsive 12 colum grid **/
@@ -45,37 +46,7 @@ html {
     }    
 }
 
-/** for tablets and device between 600px -768px 
-@media only screen and (min-width: 600px) {
-    .col-1 { width: 8.33%}
-    .col-2 { width: 16.66%}
-    .col-3 { width: 25%}
-    .col-4 { width: 33.33%}
-    .col-5 { width: 41.66%}
-    .col-6 { width: 50%}
-    .col-7 { width: 58.33%}
-    .col-8 { width: 66.66%}
-    .col-9 { width: 75%}
-    .col-10 { width: 83.33%}
-    .col-11 { width: 91.66%}
-    .col-12 { width: 100%}
-}            
 
-/** for desktop and laptop anything over 768px  
-@media only screen and (min-width: 768px) {
-    .col-1 { width: 8.33%}
-    .col-2 { width: 16.66%}
-    .col-3 { width: 25%}
-    .col-4 { width: 33.33%}
-    .col-5 { width: 41.66%}
-    .col-6 { width: 50%}
-    .col-7 { width: 58.33%}
-    .col-8 { width: 66.66%}
-    .col-9 { width: 75%}
-    .col-10 { width: 83.33%}
-    .col-11 { width: 91.66%}
-    .col-12 { width: 100%}
-}
 
 /** set  all (*) columns to float left, wiht padding 15px     
 [class *="col-"] {
@@ -168,6 +139,10 @@ img {
 
 /* ********** Nav Bar ************** */
 .navbar {
+    font-family: 'Bangers', cursive;
+    text-align: justify;
+    font-size: 1.2em;
+    color: #500D0D;
     background-color: #4b4b4f; 
     height: 5em ;
     position: fixed;    /* set navbar to fixed postion */
@@ -202,6 +177,8 @@ li a {
 }
 /* Set spacing on logo to auto thus pushes menu items to right of nav bar, sitting logo on left */
 li.logo {
+    font-size: 3em;
+    color: #500D0D;
     margin-right: auto;
     align-items: center;
     padding: 0;
@@ -218,26 +195,13 @@ li.logo {
     align-content: center;
     align-items: center;
     text-align: center;
-    background-color: #9933cc;
-    color:#ffffff;
     font-size: 2em;
+    font-family: 'Bangers', cursive;
+    text-align: justify;
+    color: #500D0D
 }
 
-.footer {
-    grid-area: 5 / 1 / 5 / span 12;
-    display: flex;
-    flex-flow: row wrap;
-    overflow: hidden;
-    background-color: #4b4b4f; 
-    height:1.5 em;
-    margin: 0.6em;
-    padding: 0.3em;
-    bottom: 0; /* set position to bottom */
-    width: 100% ; /* Full width*/
-    text-align:center;
-    justify-content: center;
-    align-items: center;
-}
+
 
 /* add style to clear flow   */   
 .row::after {
@@ -321,10 +285,12 @@ notfound p{
     /*display: flex; */
     /*flex-flow: row wrap;*/
 }
-.content-50 { /** label for 50-50% split in content **/
+.content-50 { /** label for 50-50% split in content     */
     width: 50%;
     padding: 5px;
 }
+
+/*      responsive images     */
 img{
     width: 100%;
     height: auto;
@@ -332,6 +298,81 @@ img{
     margin: 5px;
     border: 2px solid #ccc;
 }
+/**     Form formatting     **/
+/* style input, selct element and text areas        */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
 
-/**** Footer ***/ /** footer goes last there should be nothing to override the footer format as it last in document **/
+/*      style tha label display nect ot  inputs     */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+/*      style the submit button     */
+input[type=submit]{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+/*      Style the container     */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.col-75 {
+    float : left;
+    width: 75%;
+    margin-top:6px;
+}
+
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px){
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/**     Footer      */ 
+/**     Footer goes last there should be nothing to override the footer format as it last in document **/
+.footer {
+    grid-area: 5 / 1 / 5 / span 12;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+    background-color: #4b4b4f; 
+    height:1.5 em;
+    margin: 0.6em;
+    padding: 0.3em;
+    bottom: 0; /* set position to bottom */
+    width: 100% ; /* Full width*/
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+}
+
 
