@@ -121,15 +121,12 @@ img {
 @media only screen and (min-width: 768px) {
     
     .left {
-        background-color: red;
         grid-area: 2 / 1 / span 3 / span 3;
     }
     .main {
-        background-color: red;
         grid-area: 2 / 4 / span 3 / span 6;
     }
     .right {
-        background-color: red;
         grid-area: 2 / 10 / span 3 / span 3;
     }
 }
@@ -317,7 +314,7 @@ label {
 
 /*      style the submit button     */
 input[type=submit]{
-    background-color: #4CAF50;
+    background-color: #500D0D;
     color: white;
     padding: 12px 12px;
     border: none;
