@@ -30,7 +30,7 @@
                     </div>
                     <div class="row">
                         <div class="col-25">
-                            <label for="lname">Email</label>
+                            <label for="lname">Email : </label>
                         </div>
                         <div class="col-75">
                             <input type="text" id="email" name="email" placeholder="Your last name..">
@@ -51,7 +51,7 @@
                     </div>
                     <div class="row">
                         <div class="col-25">
-                            <label for="subject">Subject</label>
+                            <label for="subject">Subject : </label>
                         </div>
                         <div class="col-75">
                             <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
@@ -63,12 +63,12 @@
                     </div>
                 </form>
             </div>
-        </div>
-        <div class="left ads">
-            left columen content
-        </div>
-        <div class="footer solid-divider">
-                <?php include('footer.php') ?> 
+            <div class="left ads">
+                left columen content
+            </div>
+            <div class="footer solid-divider">
+                    <?php include('footer.php') ?> 
+            </div>
         </div>
     </body>            
 </html>
