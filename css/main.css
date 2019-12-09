@@ -38,7 +38,7 @@ html {
 
 /** setting up esponsive 12 colum grid **/
 
-/** mobile first device smaller than 600px      
+/*    
 @media only screen and (max-width: 600px){
     [class*="col-"] {
         width: 100%;
@@ -118,6 +118,48 @@ img {
                             "auto   auto    auto    auto    auto    auto    auto    auto    auto    auto    auto    auto"
                             "footer footer  footer  footer  footer  footer  footer  footer  footer  footer  footer  footer"   ; 
 }
+/**     Responive grid layout **/
+/**     Start on row / column / end (or span no of.) on row / column **/
+/**     mobile first : devices smaller than 600px  **/
+@media only screen and (max-width: 600px){
+    .left {
+    grid-area: 3 / 1 / 3 / span 12;
+    }
+    .main {
+        grid-area: 2 / 1 / 2 / span 12;
+    }
+    .right {
+        grid-area: 4 / 1 / 4 / span 12;
+    }
+}
+
+/**     Tablet and other device bigger than 600 -768px **/
+@media only screen (and min-width: 600px) {
+    .left {
+        grid-area: 4 / 1 / 4 / span 12;
+    }
+    .main {
+        grid-area: 2 / 1 / span 2 / span 8;
+    }
+    .right {
+        grid-area: 2 / 9 / span 2 / span 4;
+    }
+}
+
+/**     Other devices over 768px **/
+@media only screen and (min-width: 768px) {
+    .left {
+        grid-area: 2 / 1 / span 3 / span 3;
+    }
+
+    .main {
+        grid-area: 2 / 4 / span 3 / span 6;
+    }
+
+    .right {
+        grid-area: 2 / 10 / span 3 / span 3;
+    }
+}
 
 /* ********** Nav Bar ************** */
 .navbar {
@@ -194,19 +236,6 @@ li.logo {
 .left,
 .main {
     padding: 10px;
-}
-
-/** Start on row / column / end (or span no of.) on row / column **/
-.left {
-    grid-area: 2 / 1 / span 2 / span 3;
-}
-
-.main {
-    grid-area: 2 / 4 / span 2 / span 6;
-}
-
-.right {
-    grid-area: 2 / 10 / span 2 / span 3;
 }
 
 .footer {
