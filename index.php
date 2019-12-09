@@ -45,7 +45,7 @@
                 </p>
                 
             </div>
-            <div class="col-12 footer">
+            <div class="col-12 footer  solid-divider">
                 <?php include('footer.php') ?> 
             </div>
         </div>

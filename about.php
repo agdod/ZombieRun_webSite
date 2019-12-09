@@ -13,7 +13,7 @@
             <div class="col-12 header">
                 <h1>About</h1>
             </div> 
-            <div class="col-3 aside-right">
+            <div class="col-3 right">
                 right colume content
             </div>
             <div class="col-6 main">
@@ -27,7 +27,7 @@
                     
                     Your journey begins
             </div>  
-            <div class="col-3 aside-left ads">
+            <div class="col-3 left ads">
                 <h2>About myself</h2>
                 <p>
                     budding competer programmer living in turku finland
@@ -38,7 +38,7 @@
                     This site and the game where dont as part of the <a href="https://h2c.fi/">Highway2Code</a>trainign programme. Undertacken in conjuntion wiht TurkAmk and Turku GameLab
                 </p>
             </div>
-            <div class="col-12 footer">
+            <div class="col-12 footer solid-divider">
                     <?php include('footer.php') ?> 
             </div>
         </div>

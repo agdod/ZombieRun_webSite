@@ -15,7 +15,7 @@
             <div class="col-12 header">
                 <h1>ZombieRun</h1>
             </div> 
-            <div class="col-3 aside-right">
+            <div class="col-3 right">
                right colume content
             </div>
             <div class="col-6 main">
@@ -42,10 +42,10 @@
 
                 </form>
             </div>  
-            <div class="col-3 aside-left ads">
+            <div class="col-3 left ads">
               left columen content
             </div>
-            <div class="col-12 footer">
+            <div class="col-12 footer solid-divider">
                     <?php include('footer.php') ?> 
             </div>
         </div>
