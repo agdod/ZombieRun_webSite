@@ -109,9 +109,19 @@ img {
     height: auto;
 }
 */
+.grid-container {
+    display: grid;
+    margin-top: 5.5em;
+    grid-template-areas:       
+                            "header header  header  header  header  header  header  header  header  header  header  header"
+                            "auto   auto    auto    auto    auto    auto    auto    auto    auto    auto    auto    auto"
+                            "auto   auto    auto    auto    auto    auto    auto    auto    auto    auto    auto    auto"
+                            "footer footer  footer  footer  footer  footer  footer  footer  footer  footer  footer  footer"   ; 
+}
 
 /* ********** Nav Bar ************** */
 .navbar {
+    
     overflow: hidden;
     background-color: #4b4b4f; 
     height: 5em ;
@@ -159,31 +169,12 @@ li.logo {
 /* using grids is reltive new so would need fall back support for edge 15 or internet explorer flexigrid (?) **/
 /* grid container */
 
-.grid-container {
-    display: grid;
-    margin-top: 5.5em;
-    display: grid; 
-    grid-template-rows: [header-start] 3em [main-content] auto [footer-start] 1.5em;
-    grid-template-columns: [aside-left] 20% [main] 1fr [aside-right] 30%;
-    grid-template-areas:    
-                            "header     header      header"
-                            "aside-left main        aside-right"
-                            "footer     footer      footer"   ; 
-}
-/* repsonsive layout **/
-@media (max-width: 600px){
-    .grid-container {
-        grid-template-areas: "header        header      header"
-                            "main           main        main"
-                            "aside-left     aside-left  aside-left"
-                            "aside-right    aside-right aside-right"
-                            "footer         footer      footer";
-    }
-}
+
+
 /* header style */
-.header {
-    
-    grid-area:header;
+.header { 
+    grid-area: 1 /1 / 1/ span 12;
+    display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -200,32 +191,34 @@ li.logo {
     display: table;
 }
 
-.aside-right,
-.aside-left,
+.right,
+.left,
 .main {
     padding: 10px;
-    height:400 px; /*demo only*/
 }
 
-.aside-left {
-    grid-area: aside-left;
+/** Start on row / column / end (or span no of.) on row / column **/
+.left {
+    grid-area: 2 / 1 / span 2 / 3;
 }
 
 .main {
-    grid-area: main;
+    grid-area: 2 / 4 / span 2 / 6;
 }
 
-.aside-right {
-    grid-area: aside-right;
+.right {
+    grid-area: 2 / 10 / span 2 / span 3;
 }
 
 .footer {
-    grid-area: footer;
+    grid-area: 4 / 1 / span 1 / span 12;
     display: flex;
     flex-flow: row wrap;
     overflow: hidden;
     background-color: #4b4b4f; 
     height:1.5 em;
+    margin: 0.6em;
+    padding: 0.3em;
     bottom: 0; /* set position to bottom */
     width: 100% ; /* Full width*/
     text-align:center;
@@ -233,7 +226,7 @@ li.logo {
     align-items: center;
 }
 
-@media (max-width: 600px){
+/*@media (max-width: 600px){
     .grid-container {
         grid-template-areas: "header        header      header"
                             "main           main        main"
@@ -250,7 +243,7 @@ li.logo {
                         "aside-right    aside-right aside-right"
                         "footer         footer      footer";
     }
-}
+} */
 
 /***************        !NOTE *********************************/
 /** colors need formatting to represent and contrast better!! */

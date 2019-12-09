@@ -5,19 +5,19 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, inital-scale=1.0">
         
-        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/css/main-test.css">
         <!-- bootstrap css -->
         <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"-->
         <title>ZombieRun</title>
     </head>
 
     <body>
-        <?php include ('navbar.php') ?> 
-        <div class="grid-container" >
+            <?php include ('navbar.php') ?> 
+            <div class="grid-container" >
             <div class="col-12 header">
                 <h1>ZombieRun</h1>
             </div> 
-            <div class="col-3 aside-right">
+            <div class="col-3 right">
                 Zombie run is a third person view set ina  post apolicatic world. <br>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -37,7 +37,7 @@
                         <img src="/img/mainCharacter.png" alt text=" main character">    
                     </div> 
             </div>  
-            <div class="col-3 aside-left ads">
+            <div class="col-3 left ads">
                 <!-- use class id here as ads could be placed on several areas of the age/ site and set up using a single class -->  
             <!-- ?php include('ads.php') --> <!-- single file for ads allowing modifation to one file
             would allow for a dynmic website althoguh could put more load on HTML requests, accessing for many php files.logo
