@@ -12,42 +12,63 @@
     <body>
         <?php include ('navbar.php') ?> 
         <div class="grid-container" >
-            <div class="col-12 header">
+            <div class="header">
                 <h1>ZombieRun</h1>
             </div> 
-            <div class="col-3 right">
+            <div class="right">
                right colume content
             </div>
-            <div class="col-6 main">
+            <div class="main">
                 <form action="action_page.php">
-
-                    <label for="fname">Name : </label>
-                    <input type="text" id="fname" name="name" placeholder="Your name..">
-
-                    <label for="lname">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Your last name..">
-                    <!-- add email verifcation when focus is removed -->
-
-                    <label for="reason">Reason :</label>
-                    <select id="reason" name="reason">
-                    <option value="australia">comment</option>
-                    <option value="canada">feedback</option>
-                    <option value="usa">other</option>
-                    </select>
-
-                    <label for="subject">Comment/Feedback</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                        <!-- add verfication that text is entered -->
-                    <input type="submit" value="Submit">
-
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">Name : </label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="name" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="email" name="email" placeholder="Your last name..">
+                            <!-- add email verifcation when focus is removed -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="reason">Reason :</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="reason" name="reason">
+                                <option value="australia">comment</option>
+                                <option value="canada">feedback</option>
+                                <option value="usa">other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                            <!-- add verfication that text is entered -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
                 </form>
-            </div>  
-            <div class="col-3 left ads">
-              left columen content
             </div>
-            <div class="col-12 footer solid-divider">
-                    <?php include('footer.php') ?> 
-            </div>
+        </div>
+        <div class="left ads">
+            left columen content
+        </div>
+        <div class="footer solid-divider">
+                <?php include('footer.php') ?> 
         </div>
     </body>            
 </html>
