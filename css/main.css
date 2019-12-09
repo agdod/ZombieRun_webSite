@@ -122,7 +122,6 @@ img {
 /* ********** Nav Bar ************** */
 .navbar {
     
-    overflow: hidden;
     background-color: #4b4b4f; 
     height: 5em ;
     position: fixed;    /* set navbar to fixed postion */
@@ -199,11 +198,11 @@ li.logo {
 
 /** Start on row / column / end (or span no of.) on row / column **/
 .left {
-    grid-area: 2 / 1 / span 2 / 3;
+    grid-area: 2 / 1 / span 2 / span 3;
 }
 
 .main {
-    grid-area: 2 / 4 / span 2 / 6;
+    grid-area: 2 / 4 / span 2 / span 6;
 }
 
 .right {
@@ -211,7 +210,7 @@ li.logo {
 }
 
 .footer {
-    grid-area: 4 / 1 / span 1 / span 12;
+    grid-area: 4 / 1 / 4 / span 12;
     display: flex;
     flex-flow: row wrap;
     overflow: hidden;
