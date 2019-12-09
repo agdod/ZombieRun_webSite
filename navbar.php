@@ -1,6 +1,6 @@
 <div class="col-12 navbar">
     <ul> 
-        <li class="logo"><img src="/img/logo_ZombieRun.png" alt="ZombieRunLogo"></li>
+        <li class="logo">ZOMBIERUN</li>
         <li> <a href="index.php">Home</a> </li>
         <li> <a href="about.php">About</a> </li>
         <li> <a href="contact.php">Contact</a> </li>
