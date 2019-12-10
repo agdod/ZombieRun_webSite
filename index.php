@@ -49,6 +49,6 @@
                 <?php include('footer.php') ?> 
             </div>
         </div>
-        <script src="/src/zombieRun.js"></script>
+        <?php include ('commonscripts.php') ?> <!-- php file for common javascripts that are used across many pages-->
     </body>
 </html>

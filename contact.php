@@ -70,5 +70,6 @@
                     <?php include('footer.php') ?> 
             </div>
         </div>
+        <?php include ('commonscripts.php') ?> <!-- php file for common javascripts that are used across many pages-->
     </body>            
 </html>
