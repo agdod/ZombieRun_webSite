@@ -25,6 +25,7 @@
 
 /**     Setting that apply to whole documnet <HTML>        **/
 /* Same Font Styler as used in the game ZombieRun*/
+
 @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap'); 
 
 /** All HTML, box sizing set to border-box applies padding + border are included in total width and height **/
@@ -65,12 +66,12 @@ body {
     background: #4b4b4f;
     list-style: none;   /* remove bullet points form list */   
 }
-.navbar li{
+.navbar ul li{
     margin: 0 1em;
     margin-bottom: 7px;
     color: #ffffff;
 }
-li a {
+.navbar ul li a {
     display: block;
     border : 1 px solid;
     border-radius : .5em;
@@ -97,18 +98,6 @@ li.logo {
 /** under 890 responsive navbar 
  * logo changed */
 
-/**     hamburger menu in nav bar       **/
-.fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.fa-bars:before {
-    content: "\f0c9"}
 
 /**     End of navbar formatting        **/
 
@@ -142,10 +131,29 @@ li.logo {
 /**     mobile first : devices smaller than 600px  **/
 @media only screen and (max-width: 600px) {
     /** navbar responsive styleing **/
-    .navbar a:not(:first-child) {display: none;}
-    .nabar a.icon{
+    .navbar ul li:not(:first-child) {display: none;}
+    .navbar a.icon{
         float:right;
-        display:block;
+        position: fixed;
+        top: 1.5em;
+        right: 0.5em;
+        display:flex;
+    }
+    /**     following style class is added via javascript       **
+    *       For the display of the navbar dropdown menu         **
+    *       When the user Clicks the hamburg Icon               **/
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon{
+        float: right;
+        position: fixed;
+        right:0.5em;
+        top:1.5em;
+        display:flex;
+    }
+    .navbar.responsive li {
+        float: none;
+        display: block;
+        text-align: left;
     }
     /** main content styling    **/
     .left {
@@ -159,20 +167,6 @@ li.logo {
     }
 }
 
-/**     Responsiveness for hamburger menu, this class is added via javascript when the user click the icon      **/
-@media screen and (max-width: 600px){
-    .navbar.responsive {position: relative;}
-    .navbar.responsive a.icon{
-        position: absolute;
-        right:0;
-        top:0;
-    }
-    .navbar.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
 /**     Tablet and other device bigger than 600 -768px **/
 @media only screen and (min-width: 600px) {
     .left {
@@ -346,7 +340,7 @@ input[type=submit]{
     margin: 0.6em;
     padding: 0.3em;
     bottom: 0; /* set position to bottom */
-    width: 100% ; /* Full width*/
+    width: 98% ; /* Almost Full width leaves small border from side of page*/
     text-align:center;
     justify-content: center;
     align-items: center;
