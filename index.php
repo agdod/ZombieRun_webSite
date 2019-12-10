@@ -11,10 +11,10 @@
     <body>
         <?php include ('navbar.php') ?> 
         <div class="grid-container" >
-            <div class="col-12 header">
+            <div class="header">
                 <h1>ZombieRun</h1>
             </div> 
-            <div class="col-3 right">
+            <div class="right">
                 Zombie run is a third person view set ina  post apolicatic world. <br>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -22,7 +22,7 @@
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                 <img src="/img/apocalipse.png" alt="Post world apocalipse">
             </div>
-            <div class="col-6 main">
+            <div class="main">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus felis orci, euismod et dapibus sed, vestibulum sed nibh. 
                 Sed consectetur odio nulla. Nam at magna imperdiet, viverra neque sit amet, ultrices libero. Praesent consequat hendrerit tellus sed scelerisque. 
                 Nunc gravida tellus a lacus maximus tristique gravida at nunc. In hac habitasse platea dictumst. Praesent blandit dolor ac accumsan consectetur. 
@@ -31,7 +31,7 @@
                 <img src="/img/mainCharacter.png" alt text=" main character">    
                     
             </div>  
-            <div class="col-3 left ads">
+            <div class="left ads">
                 <p>
                     <!-- use class id here as ads could be placed on several areas of the age/ site and set up using a single class -->  
                     <!-- ?php include('ads.php') --> <!-- single file for ads allowing modifation to one file
@@ -45,9 +45,10 @@
                 </p>
                 
             </div>
-            <div class="col-12 footer  solid-divider">
+            <div class="footer  solid-divider">
                 <?php include('footer.php') ?> 
             </div>
         </div>
+        <script src="/src/zombieRun.js"></script>
     </body>
 </html>
