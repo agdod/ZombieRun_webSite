@@ -1,7 +1,7 @@
 function navbarFunction(){
     let x=document.getElementById("myNavbar");
     if (x.className === "navbar"){
-        x.className +="responsive";
+        x.className +=".responsive";
     } else {
         x.className = "navbar";
     }
