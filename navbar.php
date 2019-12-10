@@ -1,7 +1,9 @@
 <div class="navbar" id="myNavbar">
-    <ul> 
-        <li class="logo">ZOMBIERUN</li>
-        
+     
+        <div class="logo col-25">ZOMBIERUN</li> </div>
+        <div class="row">
+        <div class="col-75">
+        <ul >
         <li> <a href="index.php">Home</a> </li>
         <li> <a href="about.php">About</a> </li>
         <li> <a href="contact.php">Contact</a> </li>
@@ -14,6 +16,7 @@
         <a href="javascript:void(0);" class="icon" onclick="navbarFunction()">
             <i class="fas fa-bars"></i></a>
         
-    
+        </div>
+</div>
     
 </div>
