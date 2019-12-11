@@ -222,7 +222,7 @@ body {
 /**     End of layout formatting        **/
 
 /**     Main Content formatting         **/
-
+/**     ******** END OF RESPONSIVE GRID FORMATING   ********        **/
 p {
     margin: 15px;
 }
@@ -252,6 +252,7 @@ h2 {
     color: green;
     text-align: left;
 }
+
 blockquote {
     text-align: left;
     border: 2px solid blue;
@@ -270,7 +271,10 @@ em {
 }
 
 /** 404 page formatting ***/
-notfound p{
+.notfound p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    color: whitesmoke;
     text-align: center;
 }
 
