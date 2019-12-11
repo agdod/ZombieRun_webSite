@@ -4,7 +4,7 @@
         <li> <a href="index.php">Home</a> </li>
         <li> <a href="about.php">About</a> </li>
         <li> <a href="contact.php">Contact</a> </li>
-        <li> <a href="login.html">Login/SignUp</a> </li>   <!-- Signup login page is same page use php script to detect if logged in, if true logout 
+        <li> <a href="login.php">Login/SignUp</a> </li>   <!-- Signup login page is same page use php script to detect if logged in, if true logout 
                                                                 if false display login, with link to signup php script
                                                                 PHP script used to detect if signed in if true this link is displayed -->
 
@@ -14,7 +14,7 @@
          <a href="index.php">Home</a> 
          <a href="about.php">About</a> 
          <a href="contact.php">Contact</a> 
-         <a href="login.html">Login</a>    <!-- Signup login page is same page use php script to detect if logged in, if true logout 
+         <a href="login.php">Login</a>    <!-- Signup login page is same page use php script to detect if logged in, if true logout 
                                                                 if false display login, with link to signup php script
                                                                 PHP script used to detect if signed in if true this link is displayed -->
 
