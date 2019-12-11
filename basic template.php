@@ -12,19 +12,19 @@
     <body>
         <?php include ('navbar.php') ?> 
         <div class="grid-container" >
-            <div class="col-12 header">
-                <h1>ZombieRun</h1>
+            <div class="header">
+                <h1>#page header goes here</h1>
             </div> 
-            <div class="col-3 aside-right">
+            <div class="right">
                right colume content
             </div>
-            <div class="col-6 main">
+            <div class="main">
                main content
             </div>  
-            <div class="col-3 aside-left ads">
+            <div class="left ads">
               left columen content
             </div>
-            <div class="col-12 footer">
+            <div class="footer">
                     <?php include('footer.php') ?> 
             </div>
         </div>
