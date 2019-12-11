@@ -1,6 +1,6 @@
 <div class="navbar" id="myNavbar">
     <ul> 
-        <li class="logo">ZOMBIERUN</li>
+        <li class="logo">Elleros Games</li>
         <li> <a href="index.php">Home</a> </li>
         <li> <a href="about.php">About</a> </li>
         <li> <a href="contact.php">Contact</a> </li>
