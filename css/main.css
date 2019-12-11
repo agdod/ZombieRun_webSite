@@ -51,8 +51,6 @@ body {
     top: 0; /* set position to top */
     width: 100% ; /* Full width*/
     text-align:center;
-    justify-content: center;
-    align-items: center;
 }
 
 /* ****** Nav bar formatting with flexigrid ******* */
@@ -61,30 +59,28 @@ body {
     flex-direction: row;
     margin: 0 ;
     padding: 0.5em;
-    background: #4b4b4f;
-    list-style: none;   /* remove bullet points form list */   
-}
-.navbar ul li{
-    text-align: center;
-    margin: 0 1em;
-    margin-bottom: 7px;
-    color: #ffffff;
-}
-
-.navbar ul li a {
-    display: block;
-    border : 1 px solid;
-    border-radius : .5em;
-    padding : .5em 1em;
-    margin : .5em;
+    list-style: none;   /* remove bullet points form list */ 
+    justify-content: center;
+    align-items: center;  
 }
 
 /* Set spacing on logo to auto thus pushes menu items to right of nav bar, sitting logo on left */
- li.logo {
+
+.navbar ul li{
+    margin: 0 1em 7px 1em;
+}
+#myNavbar ul li.logo {
     font-size: 3em;
-    color: #500D0D;
-    margin-right: auto;
-    padding: 0;
+    margin-right: auto; /** should push "logo" to left and all other content to right stopped working for some reason?  *
+                        *   doesnt override the setting from .navbar ul li for some reason.                             */
+    padding: 0.2em 0.2em 0 0.2em;
+}
+.navbar ul li a {
+    display: block;
+    border : 1px solid;
+    border-radius : 0.5em;
+    padding : 0.5em 1em;
+    margin : 0.5em;
 }
 
 .navbar a.active {
@@ -132,6 +128,9 @@ body {
 /**     mobile first : devices smaller than 600px  **/
 @media only screen and (max-width: 600px) {
     /** navbar responsive styleing **/
+    .navbar ul li {
+        text-align: left;
+        }
     .navbar ul li:not(:first-child) {display: none;}
     .navbar-s a{display: none;}
     .navbar-s a.icon{
@@ -144,16 +143,7 @@ body {
     /**     following style class is added via javascript       **
     *       For the display of the navbar dropdown menu         **
     *       When the user Clicks the hamburg Icon               **/
-    .navbar-responsive {
-        position: relative;
-        background-color: #4b4b4f; 
-        height: 5em ;
-        position: fixed;    /* set navbar to fixed postion */
-        top: 0; /* set position to top */
-        width: 100% ; /* Full width*/
-        justify-content: center;
-        align-items: center
-    }
+    .navbar-responsive { position: relative;}
     .navbar-responsive ul { list-style: none;}
     .navbar-responsive li {
         float: none;
