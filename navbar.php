@@ -8,7 +8,7 @@
                                                                 if false display login, with link to signup php script
                                                                 PHP script used to detect if signed in if true this link is displayed -->
 
-        <li> <a href="userProfile.html" > Profile </a> </li> 
+        <li> <a href="userProfile.php" > Profile </a> </li> 
         </ul>
         <div class="navbar-s">
          <a href="index.php">Home</a> 
@@ -18,7 +18,7 @@
                                                                 if false display login, with link to signup php script
                                                                 PHP script used to detect if signed in if true this link is displayed -->
 
-        <a href="userProfile.html" > Profile </a>
+        <a href="userProfile.php" > Profile </a>
         <a href="javascript:void(0);" class="icon" onclick="navbarFunction()">
             <i class="fas fa-bars"></i></a>
 </div>
