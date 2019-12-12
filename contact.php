@@ -13,7 +13,7 @@
         <?php include ('navbar.php') ?> 
         <div class="grid-container" >
             <div class="header">
-                <h1>ZombieRun</h1>
+                <h1>Contact Us:</h1>
             </div> 
             <div class="right">
                right colume content
@@ -33,7 +33,7 @@
                             <label for="lname">Email : </label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="email" name="email" placeholder="Your last name..">
+                            <input type="text" id="email" name="email" placeholder="email@.....">
                             <!-- add email verifcation when focus is removed -->
                         </div>
                     </div>
