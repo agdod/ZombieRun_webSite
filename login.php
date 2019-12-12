@@ -22,7 +22,7 @@
                 <form action="action_page.php" method="post">
                     <div class="container">
                         <div class="row">
-                            <div class="col-25">
+                            <div class="col-25 t-a-right">
                                 <label for="uname"><b>Username : </b></label>
                             </div>
                             <div class="col-75">
@@ -30,7 +30,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-25">
+                            <div class="col-25 t-a-right">
                                 <label for="psw"><b>Password</b></label>
                             </div>
                             <div class="col-75">
@@ -38,17 +38,19 @@
                             </div>
                         </div>
                         <div class="row">
-                            <button type="submit">Login</button>
-                            <label>
-                                <input type="checkbox" checked="checked" name="remember"> Remember me
-                            </label>
-                        </div>      
-                    </div>
-                    <div class="row">
-                        <div class="container" style="background-color:#f1f1f1">
-                            <button type="button" class="cancelbtn">Cancel</button>
-                            <span class="psw">Forgot <a href="#">password?</a></span>
+                            <div class="col-75 col-a-r">
+                                <button type="submit">Login</button>
+                                <button type="button" class="cancelbtn">Cancel</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                            </div>
                         </div>
+                        <div class="row">
+                            <div class="col-a-r">
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div>
+                        </div>    
                     </div>
                 </form> 
             </div>  
