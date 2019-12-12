@@ -28,7 +28,7 @@
                 <div class="side">
                     <div>5 star</div>
                 </div>
-                <div class="middle">
+                <div class="col-70">
                     <div class="bar-container">
                         <div class="bar-5"></div>
                     </div>
@@ -39,7 +39,7 @@
                 <div class="side">
                     <div>4 star</div>
                 </div>
-                <div class="middle">
+                <div class="col-70">
                     <div class="bar-container">
                         <div class="bar-4"></div>
                     </div>
@@ -50,7 +50,7 @@
                 <div class="side">
                     <div>3 star</div>
                 </div>
-                <div class="middle">
+                <div class="col-70">
                     <div class="bar-container">
                         <div class="bar-3"></div>
                     </div>
@@ -61,7 +61,7 @@
                 <div class="side">
                     <div>2 star</div>
                 </div>
-                <div class="middle">
+                <div class="col-70">
                     <div class="bar-container">
                         <div class="bar-2"></div>
                     </div>
@@ -72,7 +72,7 @@
                 <div class="side">
                     <div>1 star</div>
                 </div>
-                <div class="middle">
+                <div class="col-70">
                     <div class="bar-container">
                         <div class="bar-1"></div>
                     </div>
@@ -85,10 +85,7 @@
             <div class="main">
             <h2> - Run the gaulet of zombies, escape, survive, RUN!</h2>  
             <div class="row">
-                <div class="col-30 col-a-r">
-                    <img src="/img/apocalipse.png" alt="Post world apocalipse">
-                </div>
-                <div class="middle">
+                <div class="col-70">
                     <p>
                         Zombie run is a third person view set ina  post apolicatic world. <br>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -98,7 +95,9 @@
                         
                     </p>
                 </div>
-                
+                <div class="col-30 col-a-r">
+                    <img src="/img/apocalipse.png" alt="Post world apocalipse">
+                </div>
             </div>
 
             
