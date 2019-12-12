@@ -8,32 +8,23 @@
  * Desktop / Lapop screen width :   1024 min
  * Ipad :           Horizontal  :   1024 (same as desktop)
  *                  Vertical    :   768   
- * Iphone 5 :       Horizontal  :   320
+ * Iphone 6 :       Horizontal  :   320
  *
  * A better target group would probably use a more recent phone maybe iphone6+ upwards        
  *
  *******************************************************************************/
 
- /*************************************
- * using bootstrap breaklimits 
- * xs   : <576px
- * s    : >=576px
- * m    : >=768px
- * l    : >=992px
- * XL   : >=1200px
- ***************************************/
-
 /**     Setting that apply to whole documnet <HTML>        **/
-/* Same Font Styler as used in the game ZombieRun*/
+/**     Same Font Styler as used in the game ZombieRun     **/
 
 @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap'); 
 
-/** All HTML, box sizing set to border-box applies padding + border are included in total width and height **/
+/**     All HTML, box sizing set to border-box applies padding + border are included in total width and height      **/
 *{
     box-sizing : border-box;
 }
 
-/*  basic font applied to whole document , modified where need be for differnt font */
+/**     Basic font applied to whole document , modified where need be for differnt font     **/
 body {
     font-family: "Lucida Sans", sans-serif;
     background-color: #4b4b4f;
@@ -63,17 +54,8 @@ body {
     justify-content: center;
     align-items: center;  
 }
-
-/* Set spacing on logo to auto thus pushes menu items to right of nav bar, sitting logo on left */
-
 .navbar ul li{
     margin: 0 1em 7px 1em;
-}
-#myNavbar ul li.logo {
-    font-size: 3em;
-    margin-right: auto; /** should push "logo" to left and all other content to right stopped working for some reason?  *
-                        *   doesnt override the setting from .navbar ul li for some reason.                             */
-    padding: 0.2em 0.2em 0 0.2em;
 }
 .navbar ul li a {
     display: block;
@@ -82,24 +64,24 @@ body {
     padding : 0.5em 1em;
     margin : 0.5em;
 }
-
 .navbar a.active {
     background-color: #500D0D;
     color:white;
 }
-
+/**     Set spacing on logo to auto thus pushes menu items to right of nav bar, sitting logo on left */
+#myNavbar ul li.logo {
+    font-size: 3em;
+    margin-right: auto; 
+    padding: 0.2em 0.2em 0 0.2em;
+}
 /**     Hide the link for the hamburger icon        **/
 .navbar-s .icon{
     display:none;
 }
-/** under 890 responsive navbar 
- * logo changed */
-
-
+.navbar-s {display : none;}
 /**     End of navbar formatting        **/
 
-/**     Setting up of the grid. The MainContent layout      **/
-.navbar-s {display : none;}
+/**     Setting up of the grid layout       **/
 .grid-container {
     display: grid;
     margin-top: 5.5em;
@@ -110,7 +92,6 @@ body {
                             "footer footer  footer  footer  footer  footer  footer  footer  footer  footer  footer  footer"   ; 
 }
 /**     Header style        **/
-/**     Header doesnt need responsive formatting as it center       **/
 .header { 
     grid-area: 1 /1 / 1/ span 12;
     display: flex;
@@ -123,11 +104,16 @@ body {
     text-align: justify;
     color: #500D0D
 }
-/**     Responive grid layout **/
+
+
 /**     Start on row / column / end (or span no of.) on row / column **/
 /**     mobile first : devices smaller than 600px  **/
 @media only screen and (max-width: 600px) {
     /** navbar responsive styleing **/
+    #myNavbar ul li.logo {
+        font-size:2.5em;
+        margin-left:0.1em;
+    }
     .navbar ul li {
         text-align: left;
         }
@@ -157,16 +143,13 @@ body {
         top:1.5em;
         display:flex;
     }  
-    /** main content styling    **/
-    .left {
-        grid-area: 3 / 1 / 3 / span 12;
-    }
-    .main {
-        grid-area: 2 / 1 / 2 / span 12;
-    }
-    .right {
-        grid-area: 4 / 1 / 4 / span 12;
-    }
+    /**     Responive grid layout       **/
+    .left { grid-area: 3 / 1 / 3 / span 12;}
+    .main { grid-area: 2 / 1 / 2 / span 12;}
+    .right { grid-area: 4 / 1 / 4 / span 12; }
+    /**     Main content styling        **/
+    div h2 {font-size: 1.4em;}
+    div .col-30{ width: 100%;}
 }
 
 /**     Tablet and other device bigger than 600 -768px **/
@@ -193,6 +176,8 @@ body {
     .right {
         grid-area: 2 / 10 / span 3 / span 3;
     }
+    .middle {width: 100%;}
+    .col-30 {width: 80%;}
 }
 
 @media only screen and (max-width: 1055px){
@@ -223,9 +208,7 @@ body {
 
 /**     Main Content formatting         **/
 /**     ******** END OF RESPONSIVE GRID FORMATING   ********        **/
-p {
-    margin: 15px;
-}
+p {margin: 15px;}
 a {
     text-decoration: none;
     color: blue;
@@ -238,45 +221,124 @@ a:hover {
     color: blue;
     background-color: darkgray;
 }
-a:active {
-    background-color: red;
-}
-a:visited {
-    color: maroon;
-}
-h1 {
-    text-align: center;
-}
+a:active {background-color: red;}
+a:visited { color: maroon;}
+h1 {text-align: center;}
 h2 {
     font-family: 'Dancing Script', cursive;
     color: green;
     text-align: left;
 }
-
-blockquote {
-    text-align: left;
-    border: 2px solid blue;
-    font-size: 1.5em;
-    margin: 10px;
+  
+.sub-heading {
+font-size: 25px;
+margin-right: 25px;
 }
 
-blockquote em {
-    font-size: 1em;
+.fa {font-size: 20px;}
+
+.checked {color: orange;}
+
+/**   My custom layouts     **/
+
+
+.col-15 {
+    float: left;
+    width: 15% ;
+    margin-top: 10px;
+}
+.col-30 {
+    float: left;
+    width: 30%;
+    margin-top: 10px;
 }
 
-em {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: black;
+.col-70 {
+    float: left;
+    width: 75%;
+    margin-top: 10px;
+}
+.col-75 {
+    float : left;
+    width: 75%;
+    margin-top:6px;
+}
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.t-a-right {
+    text-align: right;
+}
+.col-a-l { 
+    float: left;
+    margin-top: 10px;
+}
+.col-a-r{
+    float: right;
+    margin-top: 10px;
+}
+/** alignment last so they override the col-* alignment     **/
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/** swap .side --> col-15  **/
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+    }
+/** swap .a-right --> col-30 col-a-r **/
+.col-30{
+    float: right;
+    width: 30%;
+    margin-top:10px;
+}
+/** swap .middle --> col-70  **/
+.middle {
+float: left;
+width: 70%;
+margin-top: 10px;
 }
 
-/** 404 page formatting ***/
-.notfound p {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.5em;
-    color: whitesmoke;
-    text-align: center;
+
+  
+/* The bar container */
+.bar-container {
+width: 100%;
+background-color: #f1f1f1;
+text-align: center;
+color: white;
 }
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+  
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 1220px) {
+
+.middle {width: 85%; }
+}
+
+@media only screen and (max-width: 600px ){
+.t-a-right { 
+display: block;  
+text-align: right;
+}
+.side { 
+display: block;  
+width: 15%;
+}
+.middle {width : 70%;}
+}
+
 
 /*      responsive images     */
 img{
@@ -287,7 +349,7 @@ img{
     border: 2px solid #ccc;
 }
 /**     Form formatting     **/
-/* style input, selct element and text areas        */
+/*      style input, selct element and text areas        */
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -320,23 +382,6 @@ input[type=submit]{
     background-color: #f2f2f2;
     padding: 20px;
 }
-.col-75 {
-    float : left;
-    width: 75%;
-    margin-top:6px;
-}
-
-.col-25{
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-}
-
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 @media screen and (max-width: 600px){
     .col-25, .col-75, input[type=submit] {
@@ -344,6 +389,15 @@ input[type=submit]{
         margin-top: 0;
     }
 }
+
+/**     404 page formatting     **/
+.notfound p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    color: whitesmoke;
+    text-align: center;
+}
+
 
 .solid-divider {
     border-style: none;
