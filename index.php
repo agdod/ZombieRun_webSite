@@ -117,10 +117,8 @@
             <div class="left ads">
             <img src="/img/mainCharacter.png" alt text=" main character"> 
             The main character in the game.
-
-                <p>
-                    <!-- use class id here as ads could be placed on several areas of the age/ site and set up using a single class -->  
-                    <!-- ?php include('ads.php') --> <!-- single file for ads allowing modifation to one file
+                <p> 
+                    <!-- ?php include('ads.php') --> <!-- single file for ads allowing modifation to one file -->
                     would allow for a dynmic website althoguh could put more load on HTML requests, accessing for many php files.logo
                     Although if files are in many pages it will speed up time as file will be cached.  -->
                     for now jsut do a single flexigrid 1 colum many rows list of "ads"
@@ -128,8 +126,7 @@
                         <?php include('common_links.php') ?>
                         <!-- extra links can be added here for indivdual pages -->                                                
                     </div>
-                </p>
-                
+                </p> 
             </div>
             <div class="footer">
                 <?php include('footer.php') ?> 
