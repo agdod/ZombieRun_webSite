@@ -47,7 +47,43 @@
                 infintiy runner 3rd person style. Dodge attack the zombies SURVIVE. 
                 Numerous levels of iniftie fun, dodge attacking the zombies, get power up and hiddens weapons. Find the secerat areas. Do you have what it take to survive.
                 
-                Your journey begins        
+                Your journey begins    
+                <h3> Screen shots </h3>
+                <div class="row">
+                    <div class="col-70 col-a-r">
+                        <img src="/img/opening sequence.jpg" alt="Opening squence">Opening sequence. 
+                        Camera pans slowly over a half destroyed bridge.
+                    </div>
+                    <div class="col-25 col-a-l">
+                        <img src="/img/mainCharacter.png" alt="main character"> Main Character
+                        <i>still to decide on name...!</i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-70">
+                        <img src="/img/startoff-w-swinging.jpg" alt="swinging weapon"> Swinging the buldgen weapon
+                    </div>
+                    <div class="col-25 t-a-right">
+                        The start off point a trail swing before setting off  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-70 col-a-r" >
+                        <img src="/img/screenshot.jpg" alt="attacked by zombies"> in the think of it
+                    </div>
+                    <div class="col-25 col-a-l">
+                        <img src="/img/mainmenu.jpg" alt="main menu">Screen shot of main menu
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25 col-a-r">
+                        
+                    </div>
+                    <div class="col-75 ">
+                         
+                    </div>
+                </div>
+                
             </div>  
             <div class="left ads">
                 <h2>About myself</h2>
