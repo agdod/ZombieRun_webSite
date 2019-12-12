@@ -14,7 +14,22 @@
                 <h1>About</h1>
             </div> 
             <div class="right">
-                right colume content
+            <h2>About this project</h2>
+                <p>
+                Zombie run was desgined and developed as part of the <a href="https://www.h2c.fi">Highway2Code</a> leaning programme. 
+                Teaching coding and basic game mecanics a quick learning curve of both unity game engine
+                game develpment and C# was made during this course. the outcome a "reasonable" playable game. 
+                With time and  develpment hopfully the game can develp more and further imporve - along with my coding skill set.    
+                
+                This site was also develped along with  the game where dont as part of the <a href="https://h2c.fi/">Highway2Code</a>trainign programme. 
+                Undertacken in conjuntion with <a href="https://www.turkuamk.fi">TurkAmk</a> and Turku GameLab
+                </p>
+                <hr>
+                <div class="links">
+                    <a href="https://www.h2c.com">H2C - learning program</a><br>
+                    <a href="https://www.turkuamk.fi">TurkuAMK</a><br>
+                    <a href="https://www.unity.com">Unity</a><br>
+                </div>
             </div>
             <div class="main">
                 <h2>The game objective</h2>
@@ -36,18 +51,15 @@
             </div>  
             <div class="left ads">
                 <h2>About myself</h2>
-                <p>
-                    budding competer programmer living in turku finland
+                <div class="col-70">
+                    <p>
+                    Aspired computer programmer.
                     <!--just some extra filler text -->
-                </p>
-                <h2>About this project</h2>
-                <p>
-                Zombie run was desgined and developed as part of the Highway to code leanring programme. teaching coding and basic game mecanics a quick learning curve of both unity game engine
-                    game develpment and c# was made during this course. the outcome a "reasonable" playable game. 
-                    With time ad  develpment hopfully the game can develp more and further imporve - along wiht my coding skill set.    
-                
-                    This site was also develped along wiht  the game where dont as part of the <a href="https://h2c.fi/">Highway2Code</a>trainign programme. Undertacken in conjuntion wiht TurkAmk and Turku GameLab
-                </p>
+                    </p>
+                </div>
+                <div class="col-30 a-right">
+                    <img src="" alt="my image" >
+                </div>
             </div>
             <div class="col-12 footer solid-divider">
                     <?php include('footer.php') ?> 
