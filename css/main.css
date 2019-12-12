@@ -334,14 +334,7 @@ img{
 }
 /**     Form Styling     **/
 /*      style input, selct element and text areas        */
-/*input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}*/
+
 input[type=text], input[type=password], select, textarea {
     width: 100%;
     padding: 12px;
@@ -350,14 +343,10 @@ input[type=text], input[type=password], select, textarea {
     box-sizing: border-box;
     resize: vertical;
 }
-
-/*      style tha label display nect ot  inputs     */
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
-
-/*      style the submit button     */
 input[type=submit]{
     background-color: #500D0D;
     color: white;
@@ -368,14 +357,12 @@ input[type=submit]{
     float: right;
 }
 
-/*      Style the container     */
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
 }
 
-/**     Login  styling      **/
 button {
     background-color: #4CAF50;
     color: white;
@@ -385,8 +372,6 @@ button {
     cursor: pointer;
     width: auto
 }
-
-/*button:hover {opacity: 0.8;}*/
 
 .cancelbtn {
     width: auto;
