@@ -114,6 +114,7 @@ body {
         font-size:2.5em;
         margin-left:0.1em;
     }
+
     .navbar ul li {
         text-align: left;
         }
@@ -158,31 +159,48 @@ body {
 }
 
 /**     Tablet and other device bigger than 600 -768px **/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
     .left {
-        grid-area: 4 / 1 / 4 / span 12;
+        grid-area: 2 / 1 / span 2 / span 3;
     }
     .main {
-        grid-area: 2 / 1 / span 2 / span 8;
+        grid-area: 2 / 4 / span 2 / span 8;
     }
     .right {
-        grid-area: 2 / 9 / span 2 / span 4;
+        grid-area: 4 / 1 / 4 / span 12;
     }
+    /**     Main content styling        **/
+    .main h2 {font-size: 1.4em;}
+    .main .col-70 {width: 100%;}
+    .main .col-30{ width: 100%;}
+    /**     Right Column layout     **/
+    .right .col-70 {width:70%;}
 }
 
 /**     Other devices over 768px **/
-@media only screen and (min-width: 768px) {
-    .left {
-        grid-area: 2 / 1 / span 3 / span 2;
-    }
-    .main {
-        grid-area: 2 / 3 / span 3 / span 7;
-    }
-    .right {
-        grid-area: 2 / 10 / span 3 / span 3;
-    }
+@media only screen and (min-width: 769px) {
+    .left {grid-area: 2 / 1 / span 3 / span 2;}
+    .main {grid-area: 2 / 3 / span 3 / span 7;}
+    .right {grid-area: 2 / 10 / span 3 / span 3;}
     .col-70 {width: 100%;}
     .col-30 {width: 80%;}
+    /**     Right Column layout     **/
+    .right .col-15 {width:inherit;}
+}
+
+@media only screen and (min-width: 1025px){
+    .left {grid-area: 2 / 1 / span 3 / span 2;}
+    .main {grid-area: 2/ 3 / span 3/ span 7;}
+    .right {grid-area: 2/ 10 / span 3/12;}
+    /**     right column layout     **/
+    .right .col-70 {width:70%;}
+    .right .col-15 {width:inherit;} 
+}
+
+@media only screen and (min-width:1500px){
+    .main .col-70 {width:70%}
+    .main .col-30 {width:30%}
+
 }
 
 @media only screen and (max-width: 1055px){
@@ -245,8 +263,6 @@ margin-right: 25px;
 .checked {color: orange;}
 
 /**   My custom layouts     **/
-
-
 .col-15 {
     float: left;
     width: 15% ;
@@ -275,6 +291,7 @@ margin-right: 25px;
 .t-a-right {
     text-align: right;
 }
+/** alignment last so they override the col-* alignment     **/
 .col-a-l { 
     float: left;
     margin-top: 10px;
@@ -283,33 +300,23 @@ margin-right: 25px;
     float: right;
     margin-top: 10px;
 }
-/** alignment last so they override the col-* alignment     **/
 .row::after {
     content: "";
     display: table;
     clear: both;
 }
-/** swap .side --> col-15  **/
-.side {
-    float: left;
-    width: 15%;
-    margin-top: 10px;
-    }
-/** swap .a-right --> col-30 col-a-r **/
-.col-30{
-    float: right;
-    width: 30%;
-    margin-top:10px;
-}
-/** swap .middle --> col-70  **/
-.middle {
-float: left;
-width: 70%;
-margin-top: 10px;
-}
 
-.more {display: none;}
+/**     styyling for "Read more.."      **/ 
+#dots {display:inline}
+#more {display: none;}
 
+.more {
+    color: #f1f1f1;
+    font-style: italic;
+    width: 80%;
+    text-align: center;
+}
+/**     Review Styling      **/
 /* The bar container */
 .bar-container {
 width: 100%;
@@ -325,18 +332,12 @@ color: white;
 .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
 .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
   
-/* Responsive layout - make the columns stack on top of each other instead of next to each other */
-@media only screen and (max-width: 1220px) {
-
-.col-70 {width: 85%; }
-}
-
 @media only screen and (max-width: 600px ){
 .t-a-right { 
 display: block;  
 text-align: right;
 }
-.side { 
+.col-15 { 
 display: block;  
 width: 15%;
 }
@@ -408,7 +409,6 @@ input[type=submit]{
     border-bottom-style: solid;
     border-bottom-color: black;
 }
-
 
 /**     Footer      */ 
 /**     Footer goes last there should be nothing to override the footer format as it last in document **/

@@ -26,61 +26,61 @@
                     <hr style="border:3px solid #f1f1f1">
 
                     <div class="row">
-                    <div class="side">
-                        <div>5 star</div>
-                    </div>
-                    <div class="col-70">
-                        <div class="bar-container">
-                            <div class="bar-5"></div>
+                        <div class="col-15">
+                            <div>5 star</div>
                         </div>
-                    </div>
-                    <div class="side t-a-right">
-                        <div>150</div>
-                    </div>
-                    <div class="side">
-                        <div>4 star</div>
-                    </div>
-                    <div class="col-70">
-                        <div class="bar-container">
-                            <div class="bar-4"></div>
+                        <div class="col-70">
+                            <div class="bar-container">
+                                <div class="bar-5"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="side t-a-right">
-                        <div>63</div>
-                    </div>
-                    <div class="side">
-                        <div>3 star</div>
-                    </div>
-                    <div class="col-70">
-                        <div class="bar-container">
-                            <div class="bar-3"></div>
+                        <div class="col-15 t-a-right">
+                            <div>150</div>
                         </div>
-                    </div>
-                    <div class="side t-a-right">
-                        <div>15</div>
-                    </div>
-                    <div class="side">
-                        <div>2 star</div>
-                    </div>
-                    <div class="col-70">
-                        <div class="bar-container">
-                            <div class="bar-2"></div>
+                        <div class="col-15">
+                            <div>4 star</div>
                         </div>
-                    </div>
-                    <div class="side t-a-right">
-                        <div>6</div>
-                    </div>
-                    <div class="side">
-                        <div>1 star</div>
-                    </div>
-                    <div class="col-70">
-                        <div class="bar-container">
-                            <div class="bar-1"></div>
+                        <div class="col-70">
+                            <div class="bar-container">
+                                <div class="bar-4"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="side t-a-right">
-                        <div>20</div>
-                    </div>
+                        <div class="col-15 t-a-right">
+                            <div>63</div>
+                        </div>
+                        <div class="col-15">
+                            <div>3 star</div>
+                        </div>
+                        <div class="col-70">
+                            <div class="bar-container">
+                                <div class="bar-3"></div>
+                            </div>
+                        </div>
+                        <div class="col-15 t-a-right">
+                            <div>15</div>
+                        </div>
+                        <div class="col-15">
+                            <div>2 star</div>
+                        </div>
+                        <div class="col-70">
+                            <div class="bar-container">
+                                <div class="bar-2"></div>
+                            </div>
+                        </div>
+                        <div class="col-15 t-a-right">
+                            <div>6</div>
+                        </div>
+                        <div class="col-15">
+                            <div>1 star</div>
+                        </div>
+                        <div class="col-70">
+                            <div class="bar-container">
+                                <div class="bar-1"></div>
+                            </div>
+                        </div>
+                        <div class="col-15 t-a-right">
+                            <div>20</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                        
+                        <span id="dots">.....</span>
                     </p>
                     
                 </div>
@@ -102,7 +102,7 @@
                     <img src="/img/apocalipse.png" alt="Post world apocalipse">
                 </div>
             </div>
-            <span id="dots">...</span><span class="more">
+            <span id="more">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus felis orci, euismod et dapibus sed, vestibulum sed nibh. 
                 Sed consectetur odio nulla. Nam at magna imperdiet, viverra neque sit amet, ultrices libero. Praesent consequat hendrerit tellus sed scelerisque. 
@@ -110,8 +110,9 @@
                 Praesent blandit elit vulputate lacus laoreet ultricies. Fusce scelerisque nunc vitae quam scelerisque, sed aliquam lectus condimentum. 
                 Donec dignissim sed tellus at volutpat. Praesent viverra fermentum ligula a commodo. Praesent imperdiet in odio in pellentesque. 
                 <img src="/img/opening sequence.jpg" alt="Zombie Run Opening sequence">
-            </span>  </p>  
-            <buttin class="moreBtn" onclick="ShowMore()" id="moreBtn">Read More..</button>
+              </p>  </span>
+              <div class="more" id="moreBtn" onclick="ShowMore()">Read more...</div>
+            <!--<button  onclick="ShowMore()" id="moreBtn">Read More..</button-->
             </div>  
             <div class="left ads">
             <img src="/img/mainCharacter.png" alt text=" main character"> 
