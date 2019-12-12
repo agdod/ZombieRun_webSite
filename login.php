@@ -15,16 +15,47 @@
             <div class="col-12 header">
                 <h1>Login / Signup</h1>
             </div> 
-            <div class="col-3 aside-right">
+            <div class="right">
                right colume content
             </div>
-            <div class="col-6 main">
-               main content
+            <div class="main">
+                <form action="action_page.php" method="post">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="uname"><b>Username : </b></label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="psw"><b>Password</b></label>
+                            </div>
+                            <div class="col-75">
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button type="submit">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>      
+                    </div>
+                    <div class="row">
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </div>
+                </form> 
             </div>  
-            <div class="col-3 aside-left ads">
+            <div class="left ads">
               left columen content
             </div>
-            <div class="col-12 footer">
+            <div class="footer">
                     <?php include('footer.php') ?> 
             </div>
         </div>

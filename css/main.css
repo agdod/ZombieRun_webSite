@@ -89,6 +89,7 @@ body {
                             "header header  header  header  header  header  header  header  header  header  header  header"
                             "auto   auto    auto    auto    auto    auto    auto    auto    auto    auto    auto    auto"
                             "auto   auto    auto    auto    auto    auto    auto    auto    auto    auto    auto    auto"
+                            "auto   auto    auto    auto    auto    auto    auto    auto    auto    auto    auto    auto"
                             "footer footer  footer  footer  footer  footer  footer  footer  footer  footer  footer  footer"   ; 
 }
 /**     Header style        **/
@@ -105,7 +106,6 @@ body {
     color: #500D0D
 }
 
-
 /**     Start on row / column / end (or span no of.) on row / column **/
 /**     mobile first : devices smaller than 600px  **/
 @media only screen and (max-width: 600px) {
@@ -117,7 +117,7 @@ body {
 
     .navbar ul li {
         text-align: left;
-        }
+    }
     .navbar ul li:not(:first-child) {display: none;}
     .navbar-s a{display: none;}
     .navbar-s a.icon{
@@ -145,30 +145,24 @@ body {
         display:flex;
     }  
     /**     Responive grid layout       **/
-    .left { grid-area: 3 / 1 / 3 / span 12;}
-    .main { grid-area: 2 / 1 / 2 / span 12;}
-    .right { grid-area: 4 / 1 / 4 / span 12; }
+    .left   { grid-area: 3 / 1 / 3 / span 12;}
+    .main   { grid-area: 2 / 1 / 2 / span 12;}
+    .right  { grid-area: 4 / 1 / 4 / span 12;}
+
     /**     Main content styling        **/
     .main h2 {font-size: 1.4em;}
     .main .col-70 {width: 100%;}
     .main .col-30{ width: 100%;}
     /**     Right Column layout     **/
     .right .col-70 {width:70%;}
-
-
 }
+/**     *****   End Of @media min-width : 600px ****        **/
 
 /**     Tablet and other device bigger than 600 -768px **/
 @media only screen and (min-width: 601px) {
-    .left {
-        grid-area: 2 / 1 / span 2 / span 3;
-    }
-    .main {
-        grid-area: 2 / 4 / span 2 / span 8;
-    }
-    .right {
-        grid-area: 4 / 1 / 4 / span 12;
-    }
+    .left   { grid-area: 2 / 1 / span 2 / span 3;}
+    .main   { grid-area: 2 / 4 / span 2 / span 8;}
+    .right  { grid-area: 4 / 1 / 4 / span 12; }
     /**     Main content styling        **/
     .main h2 {font-size: 1.4em;}
     .main .col-70 {width: 100%;}
@@ -179,9 +173,9 @@ body {
 
 /**     Other devices over 768px **/
 @media only screen and (min-width: 769px) {
-    .left {grid-area: 2 / 1 / span 3 / span 2;}
-    .main {grid-area: 2 / 3 / span 3 / span 7;}
-    .right {grid-area: 2 / 10 / span 3 / span 3;}
+    .left   { grid-area: 2 / 1 / span 3 / span 2;}
+    .main   { grid-area: 2 / 4 / span 3 / span 6;}
+    .right  { grid-area: 2 / 10 / span 3 / span 3;}
     .col-70 {width: 100%;}
     .col-30 {width: 80%;}
     /**     Right Column layout     **/
@@ -189,20 +183,15 @@ body {
 }
 
 @media only screen and (min-width: 1025px){
-    .left {grid-area: 2 / 1 / span 3 / span 2;}
-    .main {grid-area: 2/ 3 / span 3/ span 7;}
-    .right {grid-area: 2/ 10 / span 3/12;}
+    .left   { grid-area: 2 / 1 / span 3 / span 2;}
+    .main   { grid-area: 2 / 3 / span 3 / span 7;}
+    .right  { grid-area: 2 / 10 / span 3 / span 3;}
     /**     right column layout     **/
     .right .col-70 {width:70%;}
     .right .col-15 {width:inherit;} 
 }
 
-@media only screen and (min-width:1500px){
-    .main .col-70 {width:70%}
-    .main .col-30 {width:30%}
-
-}
-
+/**     Adjustment of navbar        **/
 @media only screen and (max-width: 1055px){
     .navbar ul li:not(:first-child) {display: none;}
     .navbar-s {
@@ -220,17 +209,20 @@ body {
         text-align: center;
     }
 }
-/**     NOTE : Using grids is reltive new so would need fall back support for edge 15 or lower or internet explorer. Flexigrid (?) **/
 
-.right,
-.left,
-.main {
-    padding: 10px;
+@media only screen and (min-width:1500px){
+    .main .col-70 {width:70%}
+    .main .col-30 {width:30%}
+
 }
-/**     End of layout formatting        **/
+.right, .left, .main { padding: 10px;}
 
-/**     Main Content formatting         **/
-/**     ******** END OF RESPONSIVE GRID FORMATING   ********        **/
+/**     *************************       END OF GRID LAYOUT      ************************************************/
+/**     NOTE : Using grids is reltive new so would need fall back support for edge 15 or lower                  *
+**      or internet explorer. Flexigrid (?)                                                                   **/
+
+
+/**     Content formatting         **/
 p {margin: 15px;}
 a {
     text-decoration: none;
@@ -331,19 +323,6 @@ color: white;
 .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
 .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
 .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
-  
-@media only screen and (max-width: 600px ){
-.t-a-right { 
-display: block;  
-text-align: right;
-}
-.col-15 { 
-display: block;  
-width: 15%;
-}
-.col-70 {width : 70%;}
-}
-
 
 /*      responsive images     */
 img{
@@ -353,9 +332,17 @@ img{
     margin: 5px;
     border: 2px solid #ccc;
 }
-/**     Form formatting     **/
+/**     Form Styling     **/
 /*      style input, selct element and text areas        */
-input[type=text], select, textarea {
+/*input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}*/
+input[type=text], input[type=password], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -388,11 +375,51 @@ input[type=submit]{
     padding: 20px;
 }
 
-@media screen and (max-width: 600px){
+/**     Login  styling      **/
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {opacity: 0.8;}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+  
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}@media screen and (max-width: 600px){
     .col-25, .col-75, input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
+}
+
+.links {
+   /** margin: 2em;*/
+    display: block;
+    text-align: left;
+    align-content: center;
 }
 
 /**     404 page formatting     **/
