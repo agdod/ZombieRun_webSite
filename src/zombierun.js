@@ -12,13 +12,13 @@ function ShowMore() {
     let moreText = document.getElementById("more");
     let btnText = document.getElementById("moreBtn");
 
-    if (dots.style.display === "none") {
+    if (dots.style.display == "none") {
         dots.style.display = "inlinine";
-        btnText.innerHTML = "Read More..";
+        btnText.innerHTML = "Read More...";
         moreText.style.display = "none";
     } else {
         dots.style.display = "none";
-        btnText.innerHTML = "Show less..";
+        btnText.innerHTML = "...Show less";
         moreText.style.display = "inline";
     }
 
