@@ -176,7 +176,7 @@ body {
     .right {
         grid-area: 2 / 10 / span 3 / span 3;
     }
-    .middle {width: 100%;}
+    .col-70 {width: 100%;}
     .col-30 {width: 80%;}
 }
 
@@ -324,7 +324,7 @@ color: white;
 /* Responsive layout - make the columns stack on top of each other instead of next to each other */
 @media only screen and (max-width: 1220px) {
 
-.middle {width: 85%; }
+.col-70 {width: 85%; }
 }
 
 @media only screen and (max-width: 600px ){
@@ -336,7 +336,7 @@ text-align: right;
 display: block;  
 width: 15%;
 }
-.middle {width : 70%;}
+.col-70 {width : 70%;}
 }
 
 
