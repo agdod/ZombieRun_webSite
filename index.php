@@ -129,7 +129,7 @@
                 </p>
                 
             </div>
-            <div class="footer  solid-divider">
+            <div class="footer">
                 <?php include('footer.php') ?> 
             </div>
         </div>
