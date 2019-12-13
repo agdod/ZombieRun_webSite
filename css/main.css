@@ -297,21 +297,6 @@ span.psw {
     float: right;
     padding-top: 16px;
 }
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-        display: block;
-        float: none;
-    }
-    .cancelbtn {
-        width: 100%;
-    }
-}@media screen and (max-width: 600px){
-    .col-25, .col-75, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-}
 
 .links {
    /** margin: 2em;*/
@@ -334,7 +319,16 @@ span.psw {
     border-bottom-style: solid;
     border-bottom-color: black;
 }
-
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
 /**     Start on row / column / end (or span no of.) on row / column **/
 /**     mobile first : devices smaller than 600px  **/
 @media only screen and (max-width: 600px) {
@@ -387,6 +381,10 @@ span.psw {
     .main .col-33   {
         width: 100%;
         display: block;
+    }
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
     }
     .main .container .t-a-right { text-align: left;}
     /**     Right Column layout     **/
@@ -459,8 +457,6 @@ span.psw {
 /**     NOTE : Using grids is reltive new so would need fall back support for edge 15 or lower                  *
 **      or internet explorer. Flexigrid (?)                                                                   **/
 
-
-
 .container::after, .row::after {
     content: "";
     display: table;
@@ -484,5 +480,3 @@ span.psw {
     justify-content: center;
     align-items: center;
 }
-
-
