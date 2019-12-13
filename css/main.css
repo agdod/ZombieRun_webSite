@@ -106,126 +106,6 @@ body {
     color: #500D0D
 }
 
-/**     Start on row / column / end (or span no of.) on row / column **/
-/**     mobile first : devices smaller than 600px  **/
-@media only screen and (max-width: 600px) {
-    /** navbar responsive styleing **/
-    #myNavbar ul li.logo {
-        font-size:2.5em;
-        margin-left:0.1em;
-    }
-
-    .navbar ul li {
-        text-align: left;
-    }
-    .navbar ul li:not(:first-child) {display: none;}
-    .navbar-s a{display: none;}
-    .navbar-s a.icon{
-        float:right;
-        position: fixed;
-        top: 1.5em;
-        right: 0.5em;
-        display:flex;
-    }
-    /**     following style class is added via javascript       **
-    *       For the display of the navbar dropdown menu         **
-    *       When the user Clicks the hamburg Icon               **/
-    .navbar-responsive { position: relative;}
-    .navbar-responsive ul { list-style: none;}
-    .navbar-responsive li {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .navbar-responsive a.icon{
-        float: right;
-        position: fixed;
-        right:0.5em;
-        top:1.5em;
-        display:flex;
-    }  
-    /**     Responive grid layout       **/
-    .left   { grid-area: 3 / 1 / 3 / span 12;}
-    .main   { grid-area: 2 / 1 / 2 / span 12;}
-    .right  { grid-area: 4 / 1 / 4 / span 12;}
-
-    /**     Main content styling        **/
-    .main h2 {font-size: 1.4em;}
-    .main .col-70   {width: 100%;}
-    .main .col-30   { width: 100%;}
-    .main .col-33   {
-        width: 100%;
-        display: block;
-    }
-    /**     Right Column layout     **/
-    .right .col-70 {width:70%;}
-}
-/**     *****   End Of @media min-width : 600px ****        **/
-
-/**     Tablet and other device bigger than 600 -768px **/
-@media only screen and (min-width: 601px) {
-    .left   { grid-area: 2 / 1 / span 2 / span 3;}
-    .main   { grid-area: 2 / 4 / span 2 / span 9;}
-    .right  { grid-area: 4 / 1 / 4 / span 12; }
-    /**     Main content styling        **/
-    .main h2 {font-size: 1.4em;}
-    .main .col-70 {width: 100%;}
-    .main .col-30{ width: 100%;}
-    /**     Right Column layout     **/
-    .right .col-70 {width:70%;}
-}
-
-/**     Other devices over 768px **/
-@media only screen and (min-width: 769px) {
-    .left   { grid-area: 2 / 1 / span 3 / span 2;}
-    .main   { grid-area: 2 / 4 / span 3 / span 6;}
-    .right  { grid-area: 2 / 10 / span 3 / span 3;}
-    .col-70 {width: 100%;}
-    .col-30 {width: 80%;}
-    /**     Right Column layout     **/
-    .right .col-15 {width:inherit;}
-}
-
-@media only screen and (min-width: 1025px){
-    .left   { grid-area: 2 / 1 / span 3 / span 2;}
-    .main   { grid-area: 2 / 3 / span 3 / span 7;}
-    .right  { grid-area: 2 / 10 / span 3 / span 3;}
-    /**     right column layout     **/
-    .right .col-70 {width:70%;}
-    .right .col-15 {width:inherit;} 
-}
-
-/**     Adjustment of navbar        **/
-@media only screen and (max-width: 1055px){
-    .navbar ul li:not(:first-child) {display: none;}
-    .navbar-s {
-        display : flex;
-        flex-direction: row;
-        margin: 0 0.5em;
-    }
-    .navbar-s a{
-        width: 18%;
-        border : 1 px solid;
-        border-radius : .5em;
-        padding : .5em 1em;
-        margin : .5em;
-        margin-top: .1em;
-        text-align: center;
-    }
-}
-
-@media only screen and (min-width:1500px){
-    .main .col-70 {width:70%}
-    .main .col-30 {width:30%}
-
-}
-.right, .left, .main { padding: 10px;}
-
-/**     *************************       END OF GRID LAYOUT      ************************************************/
-/**     NOTE : Using grids is reltive new so would need fall back support for edge 15 or lower                  *
-**      or internet explorer. Flexigrid (?)                                                                   **/
-
-
 /**     Content formatting         **/
 p {margin: 15px;}
 a {
@@ -454,6 +334,133 @@ span.psw {
     border-bottom-style: solid;
     border-bottom-color: black;
 }
+
+/**     Start on row / column / end (or span no of.) on row / column **/
+/**     mobile first : devices smaller than 600px  **/
+@media only screen and (max-width: 600px) {
+    /** navbar responsive styleing **/
+    #myNavbar ul li.logo {
+        font-size:2.5em;
+        margin-left:0.1em;
+    }
+
+    .navbar ul li {
+        text-align: left;
+    }
+    .navbar ul li:not(:first-child) {display: none;}
+    .navbar-s a{display: none;}
+    .navbar-s a.icon{
+        float:right;
+        position: fixed;
+        top: 1.5em;
+        right: 0.5em;
+        display:flex;
+    }
+    /**     following style class is added via javascript       **
+    *       For the display of the navbar dropdown menu         **
+    *       When the user Clicks the hamburg Icon               **/
+    .navbar-responsive { position: relative;}
+    .navbar-responsive ul { 
+        list-style: none; 
+    }
+    .navbar-responsive li {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navbar-responsive a.icon{
+        float: right;
+        position: fixed;
+        right:0.5em;
+        top:1.5em;
+        display:flex;
+    }  
+    .navbar-responsive li a { background-color: darkslategrey; }
+    /**     Responive grid layout       **/
+    .left   { grid-area: 3 / 1 / 3 / span 12;}
+    .main   { grid-area: 2 / 1 / 2 / span 12;}
+    .right  { grid-area: 4 / 1 / 4 / span 12;}
+
+    /**     Main content styling        **/
+    .main h2 {font-size: 1.4em;}
+    .main .col-70   {width: 100%;}
+    .main .col-30   { width: 100%;}
+    .main .col-33   {
+        width: 100%;
+        display: block;
+    }
+    .main .container .t-a-right { text-align: left;}
+    /**     Right Column layout     **/
+    .right .col-70 {width:70%;}
+}
+/**     *****   End Of @media min-width : 600px ****        **/
+
+/**     Tablet and other device bigger than 600 -768px **/
+@media only screen and (min-width: 601px) {
+    .left   { grid-area: 2 / 1 / span 2 / span 3;}
+    .main   { grid-area: 2 / 4 / span 2 / span 9;}
+    .right  { grid-area: 4 / 1 / 4 / span 12; }
+    /**     Main content styling        **/
+    .main h2 {font-size: 1.4em;}
+    .main .col-70 {width: 100%;}
+    .main .col-30{ width: 100%;}
+    .main .col-33 {width: 50%;}
+    /**     Right Column layout     **/
+    .right .col-70 {width:70%;}
+    .right .card {width: 50%;}
+}
+
+/**     Other devices over 768px **/
+@media only screen and (min-width: 769px) {
+    .left   { grid-area: 2 / 1 / span 3 / span 2;}
+    .main   { grid-area: 2 / 4 / span 3 / span 6;}
+    .right  { grid-area: 2 / 10 / span 3 / span 3;}
+    .col-70 {width: 100%;}
+    .col-30 {width: 80%;}
+    /**     Right Column layout     **/
+    .right .col-15 {width:inherit;}
+}
+
+@media only screen and (min-width: 1025px){
+    .left   { grid-area: 2 / 1 / span 3 / span 2;}
+    .main   { grid-area: 2 / 3 / span 3 / span 7;}
+    .right  { grid-area: 2 / 10 / span 3 / span 3;}
+    /**     right column layout     **/
+    .right .col-70 {width:70%;}
+    .right .col-15 {width:inherit;} 
+}
+
+/**     Adjustment of navbar        **/
+@media only screen and (max-width: 1055px){
+    .navbar ul li:not(:first-child) {display: none;}
+    .navbar-s {
+        display : flex;
+        flex-direction: row;
+        margin: 0 0.5em;
+    }
+    .navbar-s a{
+        width: 18%;
+        border : 1 px solid;
+        border-radius : .5em;
+        padding : .5em 1em;
+        margin : .5em;
+        margin-top: .1em;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:1500px){
+    .main .col-70 {width:70%}
+    .main .col-30 {width:30%}
+
+}
+.right, .left, .main { padding: 10px;}
+
+/**     *************************       END OF GRID LAYOUT      ************************************************/
+/**     NOTE : Using grids is reltive new so would need fall back support for edge 15 or lower                  *
+**      or internet explorer. Flexigrid (?)                                                                   **/
+
+
 
 .container::after, .row::after {
     content: "";
