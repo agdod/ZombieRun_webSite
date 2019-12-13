@@ -112,7 +112,7 @@
                 <img src="/img/opening sequence.jpg" alt="Zombie Run Opening sequence">
               </p>  </span>
               <div class="more" id="moreBtn" onclick="ShowMore()">Read more...</div>
-            <!--<button  onclick="ShowMore()" id="moreBtn">Read More..</button-->
+            
             </div>  
             <div class="left ads">
             <img src="/img/mainCharacter.png" alt text=" main character"> 
@@ -123,7 +123,7 @@
                     Although if files are in many pages it will speed up time as file will be cached.  -->
                     for now jsut do a single flexigrid 1 colum many rows list of "ads"
                     <div class="links">
-                        <?php include('common_links.php') ?>
+                        <?php include('links.php') ?>
                         <!-- extra links can be added here for indivdual pages -->                                                
                     </div>
                 </p> 
