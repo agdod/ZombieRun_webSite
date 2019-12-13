@@ -118,14 +118,13 @@
             <img src="/img/mainCharacter.png" alt text=" main character"> 
             The main character in the game.
                 <p> 
-                    <!-- ?php include('ads.php') --> <!-- single file for ads allowing modifation to one file -->
+                    <?php include('links.php') ?>
+                        <!-- extra links can be added here for indivdual pages -->        
+                <!-- ?php include('ads.php') --> <!-- single file for ads allowing modifation to one file 
                     would allow for a dynmic website althoguh could put more load on HTML requests, accessing for many php files.logo
                     Although if files are in many pages it will speed up time as file will be cached.  -->
-                    for now jsut do a single flexigrid 1 colum many rows list of "ads"
-                    <div class="links">
-                        <?php include('links.php') ?>
-                        <!-- extra links can be added here for indivdual pages -->                                                
-                    </div>
+                    for now just do a single flexigrid 1 colum many rows list of "ads"
+                   
                 </p> 
             </div>
             <div class="footer">
