@@ -12,7 +12,7 @@
         <?php include ('navbar.php') ?> 
         <!-- using php script to detect if user is logged in then chane login to logout -->
         <div class="grid-container" >
-            <div class="col-12 header">
+            <div class="header">
                 <h1>Login / Signup</h1>
             </div> 
             <div class="right">
@@ -23,7 +23,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-25 t-a-right">
-                                <label for="uname"><b>Username : </b></label>
+                                <label for="uname"><b>Username :</b></label>
                             </div>
                             <div class="col-75">
                                 <input type="text" placeholder="Enter Username" name="uname" required>
@@ -31,7 +31,7 @@
                         </div>
                         <div class="row">
                             <div class="col-25 t-a-right">
-                                <label for="psw"><b>Password</b></label>
+                                <label for="psw"><b>Password :</b></label>
                             </div>
                             <div class="col-75">
                                 <input type="password" placeholder="Enter Password" name="psw" required>
