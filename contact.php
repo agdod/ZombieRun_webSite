@@ -82,10 +82,10 @@
                     <div class="row">
                         <input type="submit" value="Submit">
                     </div>
-                </form>
+                </form>  
                 <hr>
-                <h4>Meet the team: </h4>
-                <div class="row"> 
+                <h2>Meet the team: </h2>
+            <div class="row"> 
                     <div class="col-33">
                         <div class="card">
                             <img src="/img/img_avatar.png" alt="Joe Bloggs" style="width:100%">
@@ -115,14 +115,14 @@
                             <img src="/img/img_avatar2.png" alt="Jane Doe" style="width:100%">
                             <div class="container">
                                 <h2><b>Jane Doe</b></h2>
-                                <p>Senior Web Develpor </p>
+                                <p class="title">Senior Web Develpor </p>
                                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                                 <p>janedoe@ellerosgames.test</p>
                                 <p><button class="button-gen">Contact</button></p>
                             </div>
                         </div> 
                     </div> 
-                </div> <!-- end of meet the team-->
+                </div> <!-- end of meet the team-->              
             </div>
             <div class="left ads">
                 <!--?php include('links.php') ?-->
