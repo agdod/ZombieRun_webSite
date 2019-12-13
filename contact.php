@@ -88,9 +88,9 @@
                 <div class="row"> 
                     <div class="col-33">
                         <div class="card">
-                            <img src="/img/img_avatar.png" alt="Joe Bloggs" style="width:80%">
+                            <img src="/img/img_avatar.png" alt="Joe Bloggs" style="width:100%">
                             <div class="container">
-                                <h4><b>Joe blogs</b></h4>
+                                <h2><b>Joe blogs</b></h2>
                                 <p class="title">Customer Service</p>
                                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                                 <p>joebloggs@ellerosgames.test</p>
@@ -100,9 +100,9 @@
                     </div> 
                     <div class="col-33">
                         <div class="card">
-                            <img src="/img/img_avatar.png" alt="John Doe" style="width:80%">
+                            <img src="/img/img_avatar.png" alt="John Doe" style="width:100%">
                             <div class="container">
-                                <h4><b>John Doe</b></h4>
+                                <h2><b>John Doe</b></h2>
                                 <p class="title">Customer Service</p>
                                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                                 <p>johndoe@ellerosgames.test</p>
@@ -112,9 +112,9 @@
                     </div>
                     <div class="col-33">
                         <div class="card">
-                            <img src="/img/img_avatar2.png" alt="Jane Doe" style="width:80%">
+                            <img src="/img/img_avatar2.png" alt="Jane Doe" style="width:100%">
                             <div class="container">
-                                <h4><b>Jane Doe</b></h4>
+                                <h2><b>Jane Doe</b></h2>
                                 <p>Senior Web Develpor </p>
                                 <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                                 <p>janedoe@ellerosgames.test</p>
