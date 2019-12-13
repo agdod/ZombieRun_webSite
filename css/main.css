@@ -87,9 +87,9 @@ body {
     margin-top: 5.5em;
     grid-template-areas:       
                             "header header  header  header  header  header  header  header  header  header  header  header"
-                            "auto   auto    auto    auto    auto    auto    auto    auto    auto    auto    auto    auto"
-                            "auto   auto    auto    auto    auto    auto    auto    auto    auto    auto    auto    auto"
-                            "auto   auto    auto    auto    auto    auto    auto    auto    auto    auto    auto    auto"
+                            "left   left    auto    auto    auto    auto    auto    auto    auto    right   right   right"
+                            "left   left    auto    auto    auto    auto    auto    auto    auto    right   right   right"
+                            "left   left    auto    auto    auto    auto    auto    auto    auto    right   right   right"
                             "footer footer  footer  footer  footer  footer  footer  footer  footer  footer  footer  footer"   ; 
 }
 /**     Header style        **/
@@ -151,8 +151,12 @@ body {
 
     /**     Main content styling        **/
     .main h2 {font-size: 1.4em;}
-    .main .col-70 {width: 100%;}
-    .main .col-30{ width: 100%;}
+    .main .col-70   {width: 100%;}
+    .main .col-30   { width: 100%;}
+    .main .col-33   {
+        width: 100%;
+        display: block;
+    }
     /**     Right Column layout     **/
     .right .col-70 {width:70%;}
 }
@@ -260,6 +264,12 @@ margin-right: 25px;
     width: 15% ;
     margin-top: 10px;
 }
+.col-33 {   /** meet the team columns **/
+    float:left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
 .col-30 {
     float: left;
     width: 30%;
@@ -292,13 +302,38 @@ margin-right: 25px;
     float: right;
     margin-top: 10px;
 }
-.row::after {
+.container::after, .row::after {
     content: "";
     display: table;
     clear: both;
 }
+/**     About Cards Styling     **/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
+    width: 40%;
+}
 
-/**     styyling for "Read more.."      **/ 
+.card img {
+    border-radius: 5px
+}
+
+.button-gen {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+.button-gen:hover { background-color: #555;}
+.title { color: grey; }
+
+/**     styling for "Read more.."      **/ 
 #dots {display:inline}
 #more {display: none;}
 
@@ -307,14 +342,15 @@ margin-right: 25px;
     font-style: italic;
     width: 80%;
     text-align: center;
+    cursor: pointer;
 }
 /**     Review Styling      **/
 /* The bar container */
 .bar-container {
-width: 100%;
-background-color: #f1f1f1;
-text-align: center;
-color: white;
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
 }
 
 /* Individual bars */
@@ -332,6 +368,7 @@ img{
     margin: 5px;
     border: 2px solid #ccc;
 }
+/**     Contact Styling     **/
 /**     Form Styling     **/
 /*      style input, selct element and text areas        */
 
@@ -359,7 +396,7 @@ input[type=submit]{
 
 .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #b3cccc;
     padding: 20px;
 }
 
